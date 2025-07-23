@@ -1,0 +1,209 @@
+{
+  "navigation": {
+    "about": "Про мене",
+    "experience": "Досвід",
+    "projects": "Проєкти",
+    "skills": "Навички",
+    "contact": "Контакти"
+  },
+  "hero": {
+    "greeting": "Привіт, я",
+    "name": "Басілио Маркос",
+    "title": "Full-Stack Веб-розробник",
+    "subtitle": "Створюю сучасні веб-додатки з 5+ роками досвіду віддаленої роботи",
+    "description": "23-річний розробник, що спеціалізується на React/Next.js, TypeScript та сучасних веб-технологіях",
+    "scrollDown": "Прокрутити до розділу про мене",
+    "cta": {
+      "projects": "Переглянути Проєкти",
+      "contact": "Зв'язатися",
+      "resume": "Завантажити CV"
+    }
+  },
+  "about": {
+    "title": "Про мене",
+    "subtitle": "Remote-first розробник з пристрастю до створення масштабованих рішень",
+    "description": "За 5+ років у веб-розробці я пройшов шлях від PHP початківця до досвідченого Full-stack розробника. Спеціалізуюся на створенні сучасних веб-додатків з використанням React, Next.js та TypeScript.",
+    "journey": {
+      "title": "Моя подорож",
+      "items": [
+        {
+          "year": "2019",
+          "title": "Перший комерційний досвід",
+          "description": "Розпочав з PHP та Yii2 Framework в проєкті CharterTickets"
+        },
+        {
+          "year": "2020-2021",
+          "title": "Перехід до React",
+          "description": "Освоїв React та TypeScript, створив перші мобільні додатки"
+        },
+        {
+          "year": "2022-2023",
+          "title": "Full-Stack досвід",
+          "description": "Працював з Vue.js, Quasar, React Native в багатобрендових проєктах"
+        },
+        {
+          "year": "2024",
+          "title": "Сучасний стек",
+          "description": "Фокус на Next.js 15, React 19, та сучасних архітектурних рішеннях"
+        }
+      ]
+    },
+    "philosophy": {
+      "title": "Філософія розробки",
+      "principles": [
+        "Код має бути чистим та зрозумілим",
+        "Користувацький досвід — пріоритет номер один",
+        "Продуктивність та масштабованість — основа",
+        "Безперервне навчання та розвиток"
+      ]
+    }
+  },
+  "projects": {
+    "title": "Основні Проєкти",
+    "subtitle": "Виділені роботи, що демонструють мій досвід",
+    "categories": {
+      "all": "Всі",
+      "current": "Поточні",
+      "previous": "Попередні",
+      "personal": "Особисті"
+    },
+    "labels": {
+      "confidential": "Конфіденційний проєкт",
+      "current": "Поточний проєкт",
+      "personal": "Особистий проєкт",
+      "first": "Перший проєкт",
+      "inProgress": "В розробці"
+    },
+    "cta": {
+      "viewDetails": "Детальніше",
+      "viewCode": "Код",
+      "viewDemo": "Демо"
+    },
+    "items": {
+      "ovogene-catalog": {
+        "title": "Ovogene Catalog",
+        "description": "Складний каталог донорських матеріалів з мультитенантною архітектурою, інтернаціоналізацією та просунутою системою фільтрів",
+        "highlights": [
+          "Multi-tenant архітектура",
+          "Система інтернаціоналізації",
+          "Складна система фільтрів та пошуку",
+          "Адаптивний дизайн",
+          "AWS інтеграція"
+        ]
+      },
+      "dobbi": {
+        "title": "Dobbi Laundry",
+        "description": "Повноцінна платформа для послуг пральні з веб-додатком та мобільним застосунком",
+        "highlights": [
+          "Cross-platform розробка",
+          "React Native з Expo",
+          "Інтеграція платіжних систем"
+        ]
+      },
+      "driveme-ecosystem": {
+        "title": "DriveMe Ecosystem",
+        "description": "Мультибрендова платформа тверезих водіїв з єдиною кодовою базою для трьох різних брендів",
+        "highlights": [
+          "3 бренди в одній кодовій базі",
+          "Vue.js та Quasar Framework",
+          "Cross-platform мобільні додатки",
+          "Складна бізнес-логіка"
+        ]
+      },
+      "swan-admin": {
+        "title": "SWAN Trading Platform",
+        "description": "Адміністративна панель торгової платформи з React Admin та складними інтерфейсами управління",
+        "highlights": [
+          "React Admin framework",
+          "Складні форми та валідація",
+          "Управління великими даними"
+        ]
+      },
+      "mijnzetel": {
+        "title": "MijnZetel Politics",
+        "description": "Платформа політичних новин з мобільним додатком (перший самостійний проєкт з можливостями для покращень)",
+        "highlights": [
+          "React Native розробка",
+          "Перший самостійний проєкт",
+          "Досвід роботи з новинним контентом"
+        ]
+      },
+      "chartertickets": {
+        "title": "CharterTickets",
+        "description": "Агрегатор авіаквитків - перший комерційний досвід роботи протягом 10 місяців",
+        "highlights": [
+          "PHP та Yii2 Framework",
+          "Перший комерційний досвід",
+          "Інтеграція з API авіакомпаній"
+        ]
+      }
+    }
+  },
+  "skills": {
+    "title": "Технічні Навички",
+    "subtitle": "Технології та інструменти, з якими я працюю",
+    "categories": {
+      "frontend": {
+        "title": "Frontend",
+        "description": "Сучасні фронтенд технології"
+      },
+      "backend": {
+        "title": "Backend",
+        "description": "Серверні технології та бази даних"
+      },
+      "mobile": {
+        "title": "Mobile",
+        "description": "Cross-platform мобільна розробка"
+      },
+      "tools": {
+        "title": "Інструменти",
+        "description": "DevOps та інструменти розробки"
+      }
+    },
+    "experience": "років досвіду",
+    "proficiency": "Рівень володіння"
+  },
+  "contact": {
+    "title": "Давайте працювати разом",
+    "subtitle": "Готовий до нових викликів та цікавих проєктів",
+    "description": "Якщо у вас є ідея проєкту або вакансія, з якою я можу допомогти, буду радий почути від вас. Завжди відкритий до обговорення нових можливостей.",
+    "cta": "Написати мені",
+    "info": {
+      "email": "Електронна пошта",
+      "location": "Розташування",
+      "availability": "Доступність",
+      "timezone": "Часовий пояс"
+    },
+    "form": {
+      "name": "Ім'я",
+      "email": "Email",
+      "subject": "Тема",
+      "message": "Повідомлення",
+      "send": "Надіслати"
+    },
+    "social": {
+      "github": "GitHub",
+      "linkedin": "LinkedIn",
+      "telegram": "Telegram",
+      "email": "Email"
+    }
+  },
+  "footer": {
+    "madeWith": "Створено з",
+    "technologies": "Next.js, TypeScript, Tailwind CSS та HeroUI",
+    "rights": "Всі права захищені"
+  },
+  "theme": {
+    "toggle": "Переключити тему",
+    "light": "Світла",
+    "dark": "Темна",
+    "system": "Системна"
+  },
+  "language": {
+    "toggle": "Змінити мову",
+    "ukrainian": "Українська",
+    "russian": "Русский",
+    "english": "English",
+    "german": "Deutsch"
+  }
+}

@@ -1,0 +1,241 @@
+@import 'tailwindcss';
+@custom-variant dark (&:where(.dark, .dark *));
+
+/* Подключение Google Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=JetBrains+Mono:ital,wght@0,100..800;1,100..800&display=swap');
+
+:root {
+  /* Light Theme Variables - Based on Figma Design */
+  --background: 0 0% 100%;
+  --foreground: 213 31% 22%; /* #132238 */
+
+  --card: 0 0% 100%;
+  --card-foreground: 213 31% 22%;
+
+  --primary: 274 75% 62%; /* #A53DFF */
+  --primary-foreground: 0 0% 100%;
+
+  --secondary: 213 18% 94%; /* #F0F1F3 */
+  --secondary-foreground: 213 31% 22%;
+
+  --accent: 274 75% 62%;
+  --accent-foreground: 0 0% 100%;
+
+  --muted: 213 18% 94%;
+  --muted-foreground: 210 15% 44%; /* #556070 */
+
+  --border: 213 12% 90%;
+  --input: 213 12% 90%;
+  --ring: 274 75% 62%;
+
+  --radius: 0.75rem;
+
+  /* Fonts */
+  --font-inter: 'Inter', sans-serif;
+  --font-jetbrains-mono: 'JetBrains Mono', monospace;
+}
+
+.dark {
+  --background: 213 31% 12%; /* Dark version of #132238 */
+  --foreground: 0 0% 98%;
+
+  --card: 213 31% 15%;
+  --card-foreground: 0 0% 98%;
+
+  --primary: 274 75% 70%; /* Slightly lighter purple for dark mode */
+  --primary-foreground: 213 31% 12%;
+
+  --secondary: 213 25% 20%;
+  --secondary-foreground: 0 0% 95%;
+
+  --accent: 274 75% 70%;
+  --accent-foreground: 213 31% 12%;
+
+  --muted: 213 25% 20%;
+  --muted-foreground: 210 15% 65%;
+
+  --border: 213 25% 25%;
+  --input: 213 25% 25%;
+  --ring: 274 75% 70%;
+}
+
+* {
+  border-color: hsl(var(--border));
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  color: hsl(var(--foreground));
+  background: hsl(var(--background));
+  font-feature-settings:
+    'rlig' 1,
+    'calt' 1;
+  font-family: var(--font-inter);
+}
+
+/* Кастомные утилиты для анимаций */
+.animate-delay-200 {
+  animation-delay: 200ms;
+}
+
+.animate-delay-400 {
+  animation-delay: 400ms;
+}
+
+.animate-delay-600 {
+  animation-delay: 600ms;
+}
+
+/* Градиентный текст */
+.gradient-text {
+  background: linear-gradient(135deg, hsl(var(--primary)), hsl(var(--accent)));
+  background-size: 200% 200%;
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  animation: gradient-x 3s ease infinite;
+}
+
+/* Стеклянный эффект */
+.glass-effect {
+  backdrop-filter: blur(16px) saturate(180%);
+  -webkit-backdrop-filter: blur(16px) saturate(180%);
+  background-color: rgba(255, 255, 255, 0.1);
+  border: 1px solid rgba(255, 255, 255, 0.2);
+}
+
+.dark .glass-effect {
+  background-color: rgba(0, 0, 0, 0.3);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+/* Hover эффекты с современными тенями */
+.hover-lift {
+  transition:
+    transform 0.2s ease-in-out,
+    box-shadow 0.2s ease-in-out;
+}
+
+.hover-lift:hover {
+  transform: translateY(-4px);
+  box-shadow:
+    0 10px 25px -5px rgba(19, 34, 56, 0.1),
+    0 10px 10px -5px rgba(19, 34, 56, 0.04);
+}
+
+/* Современные тени для карточек */
+.shadow-modern {
+  box-shadow:
+    0 4px 6px -1px rgba(19, 34, 56, 0.1),
+    0 2px 4px -1px rgba(19, 34, 56, 0.06);
+}
+
+.shadow-modern-lg {
+  box-shadow:
+    0 10px 15px -3px rgba(19, 34, 56, 0.1),
+    0 4px 6px -2px rgba(19, 34, 56, 0.05);
+}
+
+.shadow-modern-xl {
+  box-shadow:
+    0 20px 25px -5px rgba(19, 34, 56, 0.1),
+    0 10px 10px -5px rgba(19, 34, 56, 0.04);
+}
+
+.shadow-modern-2xl {
+  box-shadow: 0 25px 50px -12px rgba(19, 34, 56, 0.25);
+}
+
+/* Технологичные тени с синим оттенком */
+.shadow-tech {
+  box-shadow:
+    0 4px 6px -1px rgba(19, 34, 56, 0.1),
+    0 2px 4px -1px rgba(19, 34, 56, 0.06),
+    0 0 0 1px rgba(165, 61, 255, 0.05);
+}
+
+.shadow-tech-lg {
+  box-shadow:
+    0 10px 15px -3px rgba(19, 34, 56, 0.1),
+    0 4px 6px -2px rgba(19, 34, 56, 0.05),
+    0 0 0 1px rgba(165, 61, 255, 0.1);
+}
+
+.shadow-tech-xl {
+  box-shadow:
+    0 20px 25px -5px rgba(19, 34, 56, 0.1),
+    0 10px 10px -5px rgba(19, 34, 56, 0.04),
+    0 0 0 1px rgba(165, 61, 255, 0.15);
+}
+
+/* Темные тени для dark mode */
+.dark .shadow-modern {
+  box-shadow:
+    0 4px 6px -1px rgba(0, 0, 0, 0.3),
+    0 2px 4px -1px rgba(0, 0, 0, 0.2);
+}
+
+.dark .shadow-modern-lg {
+  box-shadow:
+    0 10px 15px -3px rgba(0, 0, 0, 0.3),
+    0 4px 6px -2px rgba(0, 0, 0, 0.2);
+}
+
+.dark .shadow-modern-xl {
+  box-shadow:
+    0 20px 25px -5px rgba(0, 0, 0, 0.3),
+    0 10px 10px -5px rgba(0, 0, 0, 0.2);
+}
+
+.dark .shadow-modern-2xl {
+  box-shadow: 0 25px 50px -12px rgba(0, 0, 0, 0.4);
+}
+
+.dark .shadow-tech {
+  box-shadow:
+    0 4px 6px -1px rgba(0, 0, 0, 0.3),
+    0 2px 4px -1px rgba(0, 0, 0, 0.2),
+    0 0 0 1px rgba(184, 84, 255, 0.1);
+}
+
+.dark .shadow-tech-lg {
+  box-shadow:
+    0 10px 15px -3px rgba(0, 0, 0, 0.3),
+    0 4px 6px -2px rgba(0, 0, 0, 0.2),
+    0 0 0 1px rgba(184, 84, 255, 0.15);
+}
+
+.dark .shadow-tech-xl {
+  box-shadow:
+    0 20px 25px -5px rgba(0, 0, 0, 0.3),
+    0 10px 10px -5px rgba(0, 0, 0, 0.2),
+    0 0 0 1px rgba(184, 84, 255, 0.2);
+}
+
+/* Scrollbar стилизация */
+::-webkit-scrollbar {
+  width: 8px;
+}
+
+::-webkit-scrollbar-track {
+  background: hsl(var(--muted));
+}
+
+::-webkit-scrollbar-thumb {
+  background: hsl(var(--border));
+  border-radius: 4px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: hsl(var(--primary) / 0.8);
+}
+
+/* Selection цвета */
+::selection {
+  background-color: hsl(var(--primary) / 0.3);
+  color: hsl(var(--primary-foreground));
+}

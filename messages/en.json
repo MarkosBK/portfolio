@@ -1,0 +1,209 @@
+{
+  "navigation": {
+    "about": "About",
+    "experience": "Experience",
+    "projects": "Projects",
+    "skills": "Skills",
+    "contact": "Contact"
+  },
+  "hero": {
+    "greeting": "Hi, I'm",
+    "name": "Basilio Marcos",
+    "title": "Full-Stack Web Developer",
+    "subtitle": "Building modern web applications with 5+ years of remote work experience",
+    "description": "23-year-old developer specializing in React/Next.js, TypeScript and modern web technologies",
+    "scrollDown": "Scroll to about section",
+    "cta": {
+      "projects": "View Projects",
+      "contact": "Get in Touch",
+      "resume": "Download CV"
+    }
+  },
+  "about": {
+    "title": "About Me",
+    "subtitle": "Remote-first developer passionate about building scalable solutions",
+    "description": "Over 5+ years in web development, I've evolved from a PHP beginner to an experienced Full-stack developer. I specialize in building modern web applications using React, Next.js, and TypeScript.",
+    "journey": {
+      "title": "My Journey",
+      "items": [
+        {
+          "year": "2019",
+          "title": "First commercial experience",
+          "description": "Started with PHP and Yii2 Framework on CharterTickets project"
+        },
+        {
+          "year": "2020-2021",
+          "title": "Transition to React",
+          "description": "Mastered React and TypeScript, built first mobile applications"
+        },
+        {
+          "year": "2022-2023",
+          "title": "Full-Stack experience",
+          "description": "Worked with Vue.js, Quasar, React Native in multi-brand projects"
+        },
+        {
+          "year": "2024",
+          "title": "Modern stack",
+          "description": "Focus on Next.js 15, React 19, and modern architectural solutions"
+        }
+      ]
+    },
+    "philosophy": {
+      "title": "Development Philosophy",
+      "principles": [
+        "Code should be clean and understandable",
+        "User experience is the number one priority",
+        "Performance and scalability are fundamental",
+        "Continuous learning and growth"
+      ]
+    }
+  },
+  "projects": {
+    "title": "Featured Projects",
+    "subtitle": "Selected works showcasing my expertise",
+    "categories": {
+      "all": "All",
+      "current": "Current",
+      "previous": "Previous",
+      "personal": "Personal"
+    },
+    "labels": {
+      "confidential": "Confidential project",
+      "current": "Current project",
+      "personal": "Personal project",
+      "first": "First project",
+      "inProgress": "In development"
+    },
+    "cta": {
+      "viewDetails": "View Details",
+      "viewCode": "View Code",
+      "viewDemo": "View Demo"
+    },
+    "items": {
+      "ovogene-catalog": {
+        "title": "Ovogene Catalog",
+        "description": "Complex donor materials catalog with multi-tenant architecture, internationalization and advanced filtering system",
+        "highlights": [
+          "Multi-tenant architecture",
+          "Internationalization system",
+          "Complex filtering and search system",
+          "Responsive design",
+          "AWS integration"
+        ]
+      },
+      "dobbi": {
+        "title": "Dobbi Laundry",
+        "description": "Full-featured laundry service platform with web application and mobile app",
+        "highlights": [
+          "Cross-platform development",
+          "React Native with Expo",
+          "Payment systems integration"
+        ]
+      },
+      "driveme-ecosystem": {
+        "title": "DriveMe Ecosystem",
+        "description": "Multi-brand sober driver platform with unified codebase for three different brands",
+        "highlights": [
+          "3 brands in single codebase",
+          "Vue.js and Quasar Framework",
+          "Cross-platform mobile apps",
+          "Complex business logic"
+        ]
+      },
+      "swan-admin": {
+        "title": "SWAN Trading Platform",
+        "description": "Administrative panel for trading platform with React Admin and complex management interfaces",
+        "highlights": [
+          "React Admin framework",
+          "Complex forms and validation",
+          "Big data management"
+        ]
+      },
+      "mijnzetel": {
+        "title": "MijnZetel Politics",
+        "description": "Political news platform with mobile app (first independent project with room for improvements)",
+        "highlights": [
+          "React Native development",
+          "First independent project",
+          "News content management experience"
+        ]
+      },
+      "chartertickets": {
+        "title": "CharterTickets",
+        "description": "Flight tickets aggregator - first commercial experience for 10 months",
+        "highlights": [
+          "PHP and Yii2 Framework",
+          "First commercial experience",
+          "Airlines API integration"
+        ]
+      }
+    }
+  },
+  "skills": {
+    "title": "Technical Skills",
+    "subtitle": "Technologies and tools I work with",
+    "categories": {
+      "frontend": {
+        "title": "Frontend",
+        "description": "Modern frontend technologies"
+      },
+      "backend": {
+        "title": "Backend",
+        "description": "Server technologies and databases"
+      },
+      "mobile": {
+        "title": "Mobile",
+        "description": "Cross-platform mobile development"
+      },
+      "tools": {
+        "title": "Tools",
+        "description": "DevOps and development tools"
+      }
+    },
+    "experience": "years experience",
+    "proficiency": "Proficiency level"
+  },
+  "contact": {
+    "title": "Let's Work Together",
+    "subtitle": "Ready for new challenges and interesting projects",
+    "description": "If you have a project idea or vacancy I can help with, I'd love to hear from you. Always open to discussing new opportunities.",
+    "cta": "Get in Touch",
+    "info": {
+      "email": "Email",
+      "location": "Location",
+      "availability": "Availability",
+      "timezone": "Timezone"
+    },
+    "form": {
+      "name": "Name",
+      "email": "Email",
+      "subject": "Subject",
+      "message": "Message",
+      "send": "Send Message"
+    },
+    "social": {
+      "github": "GitHub",
+      "linkedin": "LinkedIn",
+      "telegram": "Telegram",
+      "email": "Email"
+    }
+  },
+  "footer": {
+    "madeWith": "Built with",
+    "technologies": "Next.js, TypeScript, Tailwind CSS and HeroUI",
+    "rights": "All rights reserved"
+  },
+  "theme": {
+    "toggle": "Toggle theme",
+    "light": "Light",
+    "dark": "Dark",
+    "system": "System"
+  },
+  "language": {
+    "toggle": "Change language",
+    "ukrainian": "Українська",
+    "russian": "Русский",
+    "english": "English",
+    "german": "Deutsch"
+  }
+}

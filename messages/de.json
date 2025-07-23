@@ -1,0 +1,209 @@
+{
+  "navigation": {
+    "about": "Über mich",
+    "experience": "Erfahrung",
+    "projects": "Projekte",
+    "skills": "Fähigkeiten",
+    "contact": "Kontakt"
+  },
+  "hero": {
+    "greeting": "Hallo, ich bin",
+    "name": "Basilio Marcos",
+    "title": "Full-Stack Web-Entwickler",
+    "subtitle": "Entwickle moderne Web-Anwendungen mit 5+ Jahren Remote-Arbeitserfahrung",
+    "description": "23-jähriger Entwickler, spezialisiert auf React/Next.js, TypeScript und moderne Web-Technologien",
+    "scrollDown": "Zum Über-mich-Bereich scrollen",
+    "cta": {
+      "projects": "Projekte ansehen",
+      "contact": "Kontakt aufnehmen",
+      "resume": "CV herunterladen"
+    }
+  },
+  "about": {
+    "title": "Über mich",
+    "subtitle": "Remote-first Entwickler mit Leidenschaft für skalierbare Lösungen",
+    "description": "Über 5+ Jahre in der Web-Entwicklung bin ich von einem PHP-Anfänger zu einem erfahrenen Full-Stack-Entwickler geworden. Ich spezialisiere mich auf moderne Web-Anwendungen mit React, Next.js und TypeScript.",
+    "journey": {
+      "title": "Mein Weg",
+      "items": [
+        {
+          "year": "2019",
+          "title": "Erste kommerzielle Erfahrung",
+          "description": "Beginn mit PHP und Yii2 Framework im CharterTickets Projekt"
+        },
+        {
+          "year": "2020-2021",
+          "title": "Übergang zu React",
+          "description": "React und TypeScript gemeistert, erste mobile Anwendungen entwickelt"
+        },
+        {
+          "year": "2022-2023",
+          "title": "Full-Stack Erfahrung",
+          "description": "Arbeit mit Vue.js, Quasar, React Native in Multi-Brand-Projekten"
+        },
+        {
+          "year": "2024",
+          "title": "Moderner Stack",
+          "description": "Fokus auf Next.js 15, React 19 und moderne Architekturlösungen"
+        }
+      ]
+    },
+    "philosophy": {
+      "title": "Entwicklungsphilosophie",
+      "principles": [
+        "Code sollte sauber und verständlich sein",
+        "Benutzererfahrung ist oberste Priorität",
+        "Performance und Skalierbarkeit sind fundamental",
+        "Kontinuierliches Lernen und Wachstum"
+      ]
+    }
+  },
+  "projects": {
+    "title": "Ausgewählte Projekte",
+    "subtitle": "Ausgewählte Arbeiten, die meine Expertise zeigen",
+    "categories": {
+      "all": "Alle",
+      "current": "Aktuell",
+      "previous": "Frühere",
+      "personal": "Persönliche"
+    },
+    "labels": {
+      "confidential": "Vertrauliches Projekt",
+      "current": "Aktuelles Projekt",
+      "personal": "Persönliches Projekt",
+      "first": "Erstes Projekt",
+      "inProgress": "In Entwicklung"
+    },
+    "cta": {
+      "viewDetails": "Details ansehen",
+      "viewCode": "Code ansehen",
+      "viewDemo": "Demo ansehen"
+    },
+    "items": {
+      "ovogene-catalog": {
+        "title": "Ovogene Catalog",
+        "description": "Komplexer Spendermaterialkatalog mit Multi-Tenant-Architektur, Internationalisierung und fortgeschrittenem Filtersystem",
+        "highlights": [
+          "Multi-Tenant-Architektur",
+          "Internationalisierungssystem",
+          "Komplexes Filter- und Suchsystem",
+          "Responsives Design",
+          "AWS-Integration"
+        ]
+      },
+      "dobbi": {
+        "title": "Dobbi Laundry",
+        "description": "Vollwertige Wäscherei-Service-Plattform mit Web-Anwendung und mobiler App",
+        "highlights": [
+          "Cross-Platform-Entwicklung",
+          "React Native mit Expo",
+          "Integration von Zahlungssystemen"
+        ]
+      },
+      "driveme-ecosystem": {
+        "title": "DriveMe Ecosystem",
+        "description": "Multi-Brand-Plattform für nüchterne Fahrer mit einheitlicher Codebasis für drei verschiedene Marken",
+        "highlights": [
+          "3 Marken in einer Codebasis",
+          "Vue.js und Quasar Framework",
+          "Cross-Platform mobile Apps",
+          "Komplexe Geschäftslogik"
+        ]
+      },
+      "swan-admin": {
+        "title": "SWAN Trading Platform",
+        "description": "Verwaltungspanel für Trading-Plattform mit React Admin und komplexen Management-Interfaces",
+        "highlights": [
+          "React Admin Framework",
+          "Komplexe Formulare und Validierung",
+          "Big Data Management"
+        ]
+      },
+      "mijnzetel": {
+        "title": "MijnZetel Politics",
+        "description": "Politische Nachrichtenplattform mit mobiler App (erstes eigenständiges Projekt mit Verbesserungspotenzial)",
+        "highlights": [
+          "React Native Entwicklung",
+          "Erstes eigenständiges Projekt",
+          "Erfahrung mit Nachrichteninhalten"
+        ]
+      },
+      "chartertickets": {
+        "title": "CharterTickets",
+        "description": "Flugticket-Aggregator - erste kommerzielle Erfahrung über 10 Monate",
+        "highlights": [
+          "PHP und Yii2 Framework",
+          "Erste kommerzielle Erfahrung",
+          "API-Integration von Fluggesellschaften"
+        ]
+      }
+    }
+  },
+  "skills": {
+    "title": "Technische Fähigkeiten",
+    "subtitle": "Technologien und Tools, mit denen ich arbeite",
+    "categories": {
+      "frontend": {
+        "title": "Frontend",
+        "description": "Moderne Frontend-Technologien"
+      },
+      "backend": {
+        "title": "Backend",
+        "description": "Server-Technologien und Datenbanken"
+      },
+      "mobile": {
+        "title": "Mobile",
+        "description": "Cross-Platform mobile Entwicklung"
+      },
+      "tools": {
+        "title": "Tools",
+        "description": "DevOps und Entwicklungstools"
+      }
+    },
+    "experience": "Jahre Erfahrung",
+    "proficiency": "Kenntnisstand"
+  },
+  "contact": {
+    "title": "Lass uns zusammenarbeiten",
+    "subtitle": "Bereit für neue Herausforderungen und interessante Projekte",
+    "description": "Wenn Sie eine Projektidee oder Stelle haben, bei der ich helfen kann, würde ich gerne von Ihnen hören. Immer offen für die Diskussion neuer Möglichkeiten.",
+    "cta": "Kontakt aufnehmen",
+    "info": {
+      "email": "E-Mail",
+      "location": "Standort",
+      "availability": "Verfügbarkeit",
+      "timezone": "Zeitzone"
+    },
+    "form": {
+      "name": "Name",
+      "email": "E-Mail",
+      "subject": "Betreff",
+      "message": "Nachricht",
+      "send": "Nachricht senden"
+    },
+    "social": {
+      "github": "GitHub",
+      "linkedin": "LinkedIn",
+      "telegram": "Telegram",
+      "email": "E-Mail"
+    }
+  },
+  "footer": {
+    "madeWith": "Erstellt mit",
+    "technologies": "Next.js, TypeScript, Tailwind CSS und HeroUI",
+    "rights": "Alle Rechte vorbehalten"
+  },
+  "theme": {
+    "toggle": "Theme wechseln",
+    "light": "Hell",
+    "dark": "Dunkel",
+    "system": "System"
+  },
+  "language": {
+    "toggle": "Sprache ändern",
+    "ukrainian": "Українська",
+    "russian": "Русский",
+    "english": "English",
+    "german": "Deutsch"
+  }
+}

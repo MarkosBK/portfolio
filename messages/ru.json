@@ -1,0 +1,209 @@
+{
+  "navigation": {
+    "about": "Обо мне",
+    "experience": "Опыт",
+    "projects": "Проекты",
+    "skills": "Навыки",
+    "contact": "Контакты"
+  },
+  "hero": {
+    "greeting": "Привет, я",
+    "name": "Басилио Маркос",
+    "title": "Full-Stack Веб-разработчик",
+    "subtitle": "Создаю современные веб-приложения с 5+ годами опыта удаленной работы",
+    "description": "23-летний разработчик, специализирующийся на React/Next.js, TypeScript и современных веб-технологиях",
+    "scrollDown": "Прокрутить к разделу обо мне",
+    "cta": {
+      "projects": "Посмотреть Проекты",
+      "contact": "Связаться",
+      "resume": "Скачать CV"
+    }
+  },
+  "about": {
+    "title": "Обо мне",
+    "subtitle": "Remote-first разработчик с страстью к созданию масштабируемых решений",
+    "description": "За 5+ лет в веб-разработке я прошел путь от PHP новичка до опытного Full-stack разработчика. Специализируюсь на создании современных веб-приложений с использованием React, Next.js и TypeScript.",
+    "journey": {
+      "title": "Мой путь",
+      "items": [
+        {
+          "year": "2019",
+          "title": "Первый коммерческий опыт",
+          "description": "Начал с PHP и Yii2 Framework в проекте CharterTickets"
+        },
+        {
+          "year": "2020-2021",
+          "title": "Переход к React",
+          "description": "Освоил React и TypeScript, создал первые мобильные приложения"
+        },
+        {
+          "year": "2022-2023",
+          "title": "Full-Stack опыт",
+          "description": "Работал с Vue.js, Quasar, React Native в мультибрендовых проектах"
+        },
+        {
+          "year": "2024",
+          "title": "Современный стек",
+          "description": "Фокус на Next.js 15, React 19, и современных архитектурных решениях"
+        }
+      ]
+    },
+    "philosophy": {
+      "title": "Философия разработки",
+      "principles": [
+        "Код должен быть чистым и понятным",
+        "Пользовательский опыт — приоритет номер один",
+        "Производительность и масштабируемость — основа",
+        "Непрерывное обучение и развитие"
+      ]
+    }
+  },
+  "projects": {
+    "title": "Основные Проекты",
+    "subtitle": "Избранные работы, демонстрирующие мой опыт",
+    "categories": {
+      "all": "Все",
+      "current": "Текущие",
+      "previous": "Предыдущие",
+      "personal": "Личные"
+    },
+    "labels": {
+      "confidential": "Конфиденциальный проект",
+      "current": "Текущий проект",
+      "personal": "Личный проект",
+      "first": "Первый проект",
+      "inProgress": "В разработке"
+    },
+    "cta": {
+      "viewDetails": "Подробнее",
+      "viewCode": "Код",
+      "viewDemo": "Демо"
+    },
+    "items": {
+      "ovogene-catalog": {
+        "title": "Ovogene Catalog",
+        "description": "Сложный каталог донорских материалов с мультитенантной архитектурой, интернационализацией и продвинутой системой фильтров",
+        "highlights": [
+          "Multi-tenant архитектура",
+          "Система интернационализации",
+          "Сложная система фильтров и поиска",
+          "Адаптивный дизайн",
+          "AWS интеграция"
+        ]
+      },
+      "dobbi": {
+        "title": "Dobbi Laundry",
+        "description": "Полноценная платформа для услуг прачечной с веб-приложением и мобильным приложением",
+        "highlights": [
+          "Cross-platform разработка",
+          "React Native с Expo",
+          "Интеграция платежных систем"
+        ]
+      },
+      "driveme-ecosystem": {
+        "title": "DriveMe Ecosystem",
+        "description": "Мультибрендовая платформа трезвых водителей с единой кодовой базой для трех разных брендов",
+        "highlights": [
+          "3 бренда в одной кодовой базе",
+          "Vue.js и Quasar Framework",
+          "Cross-platform мобильные приложения",
+          "Сложная бизнес-логика"
+        ]
+      },
+      "swan-admin": {
+        "title": "SWAN Trading Platform",
+        "description": "Административная панель торговой платформы с React Admin и сложными интерфейсами управления",
+        "highlights": [
+          "React Admin framework",
+          "Сложные формы и валидация",
+          "Управление большими данными"
+        ]
+      },
+      "mijnzetel": {
+        "title": "MijnZetel Politics",
+        "description": "Платформа политических новостей с мобильным приложением (первый самостоятельный проект с возможностями для улучшений)",
+        "highlights": [
+          "React Native разработка",
+          "Первый самостоятельный проект",
+          "Опыт работы с новостным контентом"
+        ]
+      },
+      "chartertickets": {
+        "title": "CharterTickets",
+        "description": "Агрегатор авиабилетов - первый коммерческий опыт работы в течение 10 месяцев",
+        "highlights": [
+          "PHP и Yii2 Framework",
+          "Первый коммерческий опыт",
+          "Интеграция с API авиакомпаний"
+        ]
+      }
+    }
+  },
+  "skills": {
+    "title": "Технические Навыки",
+    "subtitle": "Технологии и инструменты, с которыми я работаю",
+    "categories": {
+      "frontend": {
+        "title": "Frontend",
+        "description": "Современные фронтенд технологии"
+      },
+      "backend": {
+        "title": "Backend",
+        "description": "Серверные технологии и базы данных"
+      },
+      "mobile": {
+        "title": "Mobile",
+        "description": "Cross-platform мобильная разработка"
+      },
+      "tools": {
+        "title": "Инструменты",
+        "description": "DevOps и инструменты разработки"
+      }
+    },
+    "experience": "лет опыта",
+    "proficiency": "Уровень владения"
+  },
+  "contact": {
+    "title": "Давайте работать вместе",
+    "subtitle": "Готов к новым вызовам и интересным проектам",
+    "description": "Если у вас есть идея проекта или вакансия, с которой я могу помочь, буду рад услышать от вас. Всегда открыт для обсуждения новых возможностей.",
+    "cta": "Написать мне",
+    "info": {
+      "email": "Электронная почта",
+      "location": "Местоположение",
+      "availability": "Доступность",
+      "timezone": "Часовой пояс"
+    },
+    "form": {
+      "name": "Имя",
+      "email": "Email",
+      "subject": "Тема",
+      "message": "Сообщение",
+      "send": "Отправить"
+    },
+    "social": {
+      "github": "GitHub",
+      "linkedin": "LinkedIn",
+      "telegram": "Telegram",
+      "email": "Email"
+    }
+  },
+  "footer": {
+    "madeWith": "Создано с",
+    "technologies": "Next.js, TypeScript, Tailwind CSS и HeroUI",
+    "rights": "Все права защищены"
+  },
+  "theme": {
+    "toggle": "Переключить тему",
+    "light": "Светлая",
+    "dark": "Темная",
+    "system": "Системная"
+  },
+  "language": {
+    "toggle": "Изменить язык",
+    "ukrainian": "Українська",
+    "russian": "Русский",
+    "english": "English",
+    "german": "Deutsch"
+  }
+}
