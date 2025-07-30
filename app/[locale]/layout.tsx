@@ -4,6 +4,7 @@ import { notFound } from 'next/navigation'
 import { routing } from '@/i18n/routing'
 import { ThemeProvider } from '@/components/providers/ThemeProvider'
 import { AnimationProvider } from '@/components/providers/AnimationProvider'
+import { LanguageAnimationProvider } from '@/components/providers/LanguageAnimationProvider'
 
 interface LocaleLayoutProps {
   children: React.ReactNode
@@ -14,7 +15,7 @@ export default async function LocaleLayout({ children, params }: LocaleLayoutPro
   const { locale } = await params
 
   // Validate that the incoming `locale` parameter is valid
-  if (!routing.locales.includes(locale as any)) {
+  if (!routing.locales.includes(locale as (typeof routing.locales)[number])) {
     notFound()
   }
 
@@ -25,7 +26,9 @@ export default async function LocaleLayout({ children, params }: LocaleLayoutPro
     <NextIntlClientProvider messages={messages}>
       <ThemeProvider>
         <AnimationProvider>
-          <div className="bg-background text-foreground min-h-screen">{children}</div>
+          <LanguageAnimationProvider>
+            <div className="bg-background text-foreground min-h-screen">{children}</div>
+          </LanguageAnimationProvider>
         </AnimationProvider>
       </ThemeProvider>
     </NextIntlClientProvider>

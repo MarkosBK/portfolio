@@ -1,22 +1,21 @@
 'use client'
 
 import { useState, useEffect } from 'react'
-import { useTranslations } from 'next-intl'
+import { useTranslations, useLocale } from 'next-intl'
 import { useTheme } from 'next-themes'
 import {
   Navbar,
   NavbarBrand,
   NavbarContent,
   NavbarItem,
-  NavbarMenuToggle,
   NavbarMenu,
   NavbarMenuItem,
   Dropdown,
   DropdownTrigger,
   DropdownMenu,
   DropdownItem,
-  Button,
 } from '@heroui/react'
+import { Button } from '@/components/ui/Button'
 import { Sun, Moon, Globe, Menu, X } from 'lucide-react'
 import { useRouter, usePathname } from '@/i18n/routing'
 import { cn } from '@/lib/cn'
@@ -30,6 +29,7 @@ export function Header() {
   const tLanguage = useTranslations('language')
   const router = useRouter()
   const pathname = usePathname()
+  const currentLocale = useLocale()
 
   // Prevent hydration mismatch
   useEffect(() => {
@@ -38,8 +38,8 @@ export function Header() {
 
   const navigation = [
     { name: t('about'), href: '#about' },
-    { name: t('skills'), href: '#skills' },
     { name: t('projects'), href: '#projects' },
+    { name: t('skills'), href: '#skills' },
     { name: t('contact'), href: '#contact' },
   ]
 
@@ -50,7 +50,6 @@ export function Header() {
     { code: 'de', name: tLanguage('german'), flag: '🇩🇪' },
   ]
 
-  const currentLocale = pathname.split('/')[1] || 'ua'
   const currentLanguage = languages.find(lang => lang.code === currentLocale)
 
   const scrollToSection = (href: string) => {
@@ -62,8 +61,11 @@ export function Header() {
   }
 
   const changeLanguage = (locale: string) => {
-    const newPath = pathname.replace(/^\/[^\/]+/, `/${locale}`)
-    router.push(newPath)
+    // Сбрасываем scroll position и переключаем язык
+    window.scrollTo(0, 0)
+    setTimeout(() => {
+      router.replace(pathname, { locale })
+    }, 100)
   }
 
   const toggleTheme = () => {
@@ -72,11 +74,19 @@ export function Header() {
     }
   }
 
+  const toggleThemeAndCloseMenu = () => {
+    toggleTheme()
+    setIsMenuOpen(false)
+  }
+
   return (
     <Navbar
       isMenuOpen={isMenuOpen}
       onMenuOpenChange={setIsMenuOpen}
-      className="glass-effect border-border/50 fixed top-0 z-50 border-b backdrop-blur-lg"
+      className={cn(
+        'fixed top-0 z-50',
+        'mobile-solid-header lg:glass-effect lg:border-border/50 lg:border-b lg:backdrop-blur-lg'
+      )}
       maxWidth="xl"
     >
       {/* Brand */}
@@ -84,7 +94,7 @@ export function Header() {
         <NavbarBrand>
           <button
             onClick={() => scrollToSection('#hero')}
-            className="gradient-text focus:ring-primary/50 cursor-pointer rounded-lg px-2 py-1 text-xl font-bold transition-all duration-200 hover:scale-110 focus:scale-110 focus:ring-2 focus:outline-none"
+            className="gradient-text focus:ring-primary/50 cursor-pointer rounded-lg px-3 py-2 text-2xl font-bold transition-all duration-200 hover:scale-110 focus:scale-110 focus:ring-2 focus:outline-none lg:text-xl"
             aria-label="Go to top"
           >
             BM
@@ -107,8 +117,8 @@ export function Header() {
         ))}
       </NavbarContent>
 
-      {/* Theme & Language Controls */}
-      <NavbarContent justify="end">
+      {/* Theme & Language Controls - Desktop Only */}
+      <NavbarContent justify="end" className="hidden lg:flex">
         {/* Theme Toggle */}
         <NavbarItem>
           <Button
@@ -116,7 +126,7 @@ export function Header() {
             variant="light"
             onPress={toggleTheme}
             aria-label={tTheme('toggle')}
-            className="hover:bg-primary/10 cursor-pointer transition-all duration-200 hover:scale-110 focus:scale-110"
+            className="hover:bg-muted cursor-pointer transition-all duration-200 hover:scale-110 focus:scale-110"
           >
             {mounted && theme === 'light' ? (
               <Moon size={18} className="transition-transform hover:rotate-12" />
@@ -130,54 +140,91 @@ export function Header() {
 
         {/* Language Selector */}
         <NavbarItem>
-          <Dropdown>
+          <Dropdown placement="bottom-end">
             <DropdownTrigger>
               <Button
-                variant="light"
-                className="hover:bg-primary/10 cursor-pointer transition-all duration-200 hover:scale-105 focus:scale-105"
-                startContent={<Globe size={18} className="transition-transform hover:rotate-12" />}
+                variant="bordered"
+                className="border-border hover:border-border/60 hover:bg-muted group min-w-[80px] cursor-pointer gap-2 rounded-xl border px-3 py-2 transition-all duration-300 hover:scale-105 hover:shadow-lg focus:scale-105"
               >
-                <span className="hidden text-lg sm:inline">{currentLanguage?.flag}</span>
+                <div className="flex items-center gap-2">
+                  <span className="text-xl transition-transform duration-300 group-hover:scale-110">
+                    {currentLanguage?.flag}
+                  </span>
+                  <span className="text-foreground/80 group-hover:text-foreground hidden text-sm font-medium tracking-wide uppercase transition-colors duration-300 sm:inline">
+                    {currentLocale}
+                  </span>
+                  <Globe
+                    size={14}
+                    className="text-foreground/60 group-hover:text-foreground transition-all duration-300 group-hover:rotate-12"
+                  />
+                </div>
               </Button>
             </DropdownTrigger>
             <DropdownMenu
               aria-label={tLanguage('toggle')}
               selectedKeys={new Set([currentLocale])}
-              className="min-w-[160px]"
+              className="border-border/20 bg-background min-w-[200px] rounded-xl border"
+              itemClasses={{
+                base: 'rounded-lg data-[hover=true]:bg-muted data-[selectable=true]:focus:bg-muted',
+                title: 'font-medium',
+              }}
             >
               {languages.map(lang => (
                 <DropdownItem
                   key={lang.code}
+                  textValue={`${lang.name} (${lang.code})`}
                   onClick={() => changeLanguage(lang.code)}
-                  startContent={<span className="text-lg">{lang.flag}</span>}
                   className={cn(
-                    'hover:bg-primary/10 cursor-pointer transition-colors',
-                    lang.code === currentLocale ? 'bg-primary/5 text-primary' : ''
+                    'group cursor-pointer rounded-lg px-4 py-3 transition-all duration-200',
+                    lang.code === currentLocale
+                      ? 'bg-muted text-foreground shadow-sm'
+                      : 'hover:bg-muted/50 hover:shadow-sm'
                   )}
+                  startContent={
+                    <div className="flex items-center gap-3">
+                      <span className="text-xl transition-transform duration-200 group-hover:scale-110">
+                        {lang.flag}
+                      </span>
+                      <div className="flex flex-col">
+                        <span className="text-sm font-medium">{lang.name}</span>
+                        <span className="text-foreground/50 text-xs tracking-wider uppercase">
+                          {lang.code}
+                        </span>
+                      </div>
+                    </div>
+                  }
                 >
-                  {lang.name}
+                  {lang.code === currentLocale && (
+                    <div className="ml-auto">
+                      <div className="bg-foreground h-2 w-2 rounded-full"></div>
+                    </div>
+                  )}
                 </DropdownItem>
               ))}
             </DropdownMenu>
           </Dropdown>
         </NavbarItem>
+      </NavbarContent>
 
-        {/* Mobile Menu Toggle */}
-        <NavbarMenuToggle
+      {/* Mobile Menu Toggle */}
+      <NavbarContent justify="end" className="lg:hidden">
+        <Button
+          isIconOnly
+          variant="light"
+          onPress={() => setIsMenuOpen(!isMenuOpen)}
           aria-label={isMenuOpen ? 'Close menu' : 'Open menu'}
-          className="hover:bg-primary/10 cursor-pointer rounded-md transition-all duration-200 hover:scale-110 focus:scale-110 lg:hidden"
-          icon={
-            isMenuOpen ? (
-              <X size={20} className="rotate-90 transition-transform" />
-            ) : (
-              <Menu size={20} className="transition-transform hover:rotate-180" />
-            )
-          }
-        />
+          className="hover:bg-primary/10 h-12 w-12 cursor-pointer rounded-md transition-all duration-200 hover:scale-110 focus:scale-110"
+        >
+          {isMenuOpen ? (
+            <X size={24} className="rotate-90 transition-transform" />
+          ) : (
+            <Menu size={24} className="transition-transform hover:rotate-180" />
+          )}
+        </Button>
       </NavbarContent>
 
       {/* Mobile Menu */}
-      <NavbarMenu className="bg-background/95 pt-6 backdrop-blur-lg">
+      <NavbarMenu className="bg-background mobile-menu-solid border-border/20 border-t pt-6">
         <div className="space-y-2">
           {navigation.map((item, index) => (
             <NavbarMenuItem key={item.href}>
@@ -195,27 +242,94 @@ export function Header() {
           ))}
         </div>
 
-        {/* Mobile Theme Toggle */}
-        <div className="border-border/50 mt-8 border-t pt-4">
+        {/* Mobile Controls - More Compact */}
+        <div className="border-border/50 mt-6 flex flex-col gap-3 border-t pt-4">
+          {/* Mobile Language Dropdown */}
+          <Dropdown placement="bottom-start">
+            <DropdownTrigger>
+              <Button
+                variant="bordered"
+                className="border-primary/20 hover:border-primary/40 hover:bg-primary/10 group w-full cursor-pointer justify-start gap-3 rounded-lg border px-4 py-3 transition-all duration-300"
+              >
+                <span className="text-lg transition-transform duration-300 group-hover:scale-110">
+                  {currentLanguage?.flag}
+                </span>
+                <span className="text-foreground/80 group-hover:text-primary text-sm font-medium">
+                  {currentLanguage?.name}
+                </span>
+                <Globe
+                  size={16}
+                  className="text-foreground/60 group-hover:text-primary ml-auto transition-all duration-300"
+                />
+              </Button>
+            </DropdownTrigger>
+            <DropdownMenu
+              aria-label={tLanguage('toggle')}
+              selectedKeys={new Set([currentLocale])}
+              className="border-border/20 bg-background min-w-[200px] rounded-xl border"
+              itemClasses={{
+                base: 'rounded-lg data-[hover=true]:bg-primary/10 data-[selectable=true]:focus:bg-primary/10',
+                title: 'font-medium',
+              }}
+            >
+              {languages.map(lang => (
+                <DropdownItem
+                  key={lang.code}
+                  textValue={`${lang.name} (${lang.code})`}
+                  onClick={() => {
+                    changeLanguage(lang.code)
+                    setIsMenuOpen(false)
+                  }}
+                  className={cn(
+                    'group cursor-pointer rounded-lg px-4 py-3 transition-all duration-200',
+                    lang.code === currentLocale
+                      ? 'bg-primary/10 text-primary shadow-sm'
+                      : 'hover:bg-primary/5 hover:shadow-sm'
+                  )}
+                  startContent={
+                    <div className="flex items-center gap-3">
+                      <span className="text-xl transition-transform duration-200 group-hover:scale-110">
+                        {lang.flag}
+                      </span>
+                      <div className="flex flex-col">
+                        <span className="text-sm font-medium">{lang.name}</span>
+                        <span className="text-foreground/50 text-xs tracking-wider uppercase">
+                          {lang.code}
+                        </span>
+                      </div>
+                    </div>
+                  }
+                >
+                  {lang.code === currentLocale && (
+                    <div className="ml-auto">
+                      <div className="bg-primary h-2 w-2 rounded-full"></div>
+                    </div>
+                  )}
+                </DropdownItem>
+              ))}
+            </DropdownMenu>
+          </Dropdown>
+
+          {/* Mobile Theme Toggle - Compact */}
           <Button
-            variant="light"
-            onPress={toggleTheme}
-            className="hover:bg-primary/10 w-full cursor-pointer justify-start transition-all duration-200 hover:scale-105"
-            startContent={
-              mounted && theme === 'light' ? (
-                <Moon size={18} className="transition-transform" />
-              ) : mounted && theme === 'dark' ? (
-                <Sun size={18} className="transition-transform" />
-              ) : (
-                <div className="bg-muted-foreground/20 h-[18px] w-[18px] animate-pulse rounded-full"></div>
-              )
-            }
+            variant="bordered"
+            onPress={toggleThemeAndCloseMenu}
+            className="border-primary/20 hover:border-primary/40 hover:bg-primary/10 group w-full cursor-pointer justify-start gap-3 rounded-lg border px-4 py-3 transition-all duration-300"
           >
-            {mounted && theme === 'light'
-              ? 'Switch to Dark'
-              : mounted && theme === 'dark'
-                ? 'Switch to Light'
-                : 'Loading...'}
+            {mounted && theme === 'light' ? (
+              <Moon size={18} className="transition-transform" />
+            ) : mounted && theme === 'dark' ? (
+              <Sun size={18} className="transition-transform" />
+            ) : (
+              <div className="bg-muted-foreground/20 h-[18px] w-[18px] animate-pulse rounded-full"></div>
+            )}
+            <span className="text-foreground/80 group-hover:text-primary text-sm font-medium">
+              {mounted && theme === 'light'
+                ? tTheme('switchToDark')
+                : mounted && theme === 'dark'
+                  ? tTheme('switchToLight')
+                  : 'Loading...'}
+            </span>
           </Button>
         </div>
       </NavbarMenu>

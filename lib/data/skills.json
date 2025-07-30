@@ -1,0 +1,43 @@
+{
+  "skillSections": [
+    {
+      "title": "Основной стек",
+      "techs": [
+        { "name": "React/Next.js", "level": "expert" },
+        { "name": "TypeScript", "level": "expert" },
+        { "name": "PostgreSQL/MySQL", "level": "expert" },
+        { "name": "React Native", "level": "expert" },
+        { "name": "Expo", "level": "expert" }
+      ]
+    },
+    {
+      "title": "Дополнительный стек",
+      "techs": [
+        { "name": "Vue.js", "level": "advanced" },
+        { "name": "Vuetify", "level": "advanced" },
+        { "name": "Node.js/Express", "level": "advanced" },
+        { "name": "Prisma ORM", "level": "expert" },
+        { "name": "Firebase", "level": "advanced" },
+        { "name": "Supabase", "level": "advanced" },
+        { "name": "Quasar", "level": "advanced" },
+        { "name": "Capacitor", "level": "advanced" }
+      ]
+    },
+    {
+      "title": "Инструменты и DevOps",
+      "techs": [
+        { "name": "Tailwind CSS", "level": "expert" },
+        { "name": "Git/GitHub", "level": "expert" },
+        { "name": "Docker", "level": "advanced" },
+        { "name": "AWS", "level": "intermediate" },
+        { "name": "CI/CD", "level": "advanced" }
+      ]
+    }
+  ],
+  "coreSkills": [
+    { "name": "React/Next.js", "level": "expert" },
+    { "name": "TypeScript", "level": "expert" },
+    { "name": "PostgreSQL/MySQL", "level": "expert" },
+    { "name": "React Native", "level": "expert" }
+  ]
+}

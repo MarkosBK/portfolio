@@ -12,28 +12,28 @@ const config: Config = {
   theme: {
     extend: {
       colors: {
-        background: 'hsl(var(--background))',
-        foreground: 'hsl(var(--foreground))',
+        background: 'var(--color-background)',
+        foreground: 'var(--color-foreground)',
         primary: {
-          DEFAULT: 'hsl(var(--primary))',
-          foreground: 'hsl(var(--primary-foreground))',
+          DEFAULT: 'var(--color-primary)',
+          foreground: 'var(--color-primary-foreground)',
         },
         secondary: {
-          DEFAULT: 'hsl(var(--secondary))',
-          foreground: 'hsl(var(--secondary-foreground))',
+          DEFAULT: 'var(--color-secondary)',
+          foreground: 'var(--color-secondary-foreground)',
         },
         accent: {
-          DEFAULT: 'hsl(var(--accent))',
-          foreground: 'hsl(var(--accent-foreground))',
+          DEFAULT: 'var(--color-accent)',
+          foreground: 'var(--color-accent-foreground)',
         },
         muted: {
-          DEFAULT: 'hsl(var(--muted))',
-          foreground: 'hsl(var(--muted-foreground))',
+          DEFAULT: 'var(--color-muted)',
+          foreground: 'var(--color-muted-foreground)',
         },
-        border: 'hsl(var(--border))',
+        border: 'var(--color-border)',
         card: {
-          DEFAULT: 'hsl(var(--card))',
-          foreground: 'hsl(var(--card-foreground))',
+          DEFAULT: 'var(--color-card)',
+          foreground: 'var(--color-card-foreground)',
         },
       },
       fontFamily: {
@@ -107,12 +107,12 @@ const config: Config = {
         light: {
           colors: {
             primary: {
-              DEFAULT: '#A53DFF',
-              foreground: '#ffffff',
+              DEFAULT: 'var(--color-primary)',
+              foreground: 'var(--color-primary-foreground)',
             },
             secondary: {
-              DEFAULT: '#F0F1F3',
-              foreground: '#132238',
+              DEFAULT: 'var(--color-secondary)',
+              foreground: 'var(--color-secondary-foreground)',
             },
             success: {
               DEFAULT: '#10B981',
@@ -126,19 +126,19 @@ const config: Config = {
               DEFAULT: '#EF4444',
               foreground: '#ffffff',
             },
-            background: '#ffffff',
-            foreground: '#132238',
+            background: 'var(--color-background)',
+            foreground: 'var(--color-foreground)',
           },
         },
         dark: {
           colors: {
             primary: {
-              DEFAULT: '#B854FF',
-              foreground: '#1A1F2E',
+              DEFAULT: 'var(--color-primary)',
+              foreground: 'var(--color-primary-foreground)',
             },
             secondary: {
-              DEFAULT: '#2A3441',
-              foreground: '#F0F1F3',
+              DEFAULT: 'var(--color-secondary)',
+              foreground: 'var(--color-secondary-foreground)',
             },
             success: {
               DEFAULT: '#34D399',
@@ -152,8 +152,8 @@ const config: Config = {
               DEFAULT: '#F87171',
               foreground: '#1A1F2E',
             },
-            background: '#1A1F2E',
-            foreground: '#F0F1F3',
+            background: 'var(--color-background)',
+            foreground: 'var(--color-foreground)',
           },
         },
       },

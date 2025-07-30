@@ -1,6 +1,10 @@
 import type { Metadata } from 'next'
 import { Inter, JetBrains_Mono } from 'next/font/google'
 import './globals.css'
+import 'swiper/css'
+import 'swiper/css/navigation'
+import 'swiper/css/pagination'
+import 'swiper/css/effect-coverflow'
 
 const inter = Inter({
   subsets: ['latin', 'cyrillic'],
@@ -16,8 +20,8 @@ const jetbrainsMono = JetBrains_Mono({
 
 export const metadata: Metadata = {
   title: {
-    default: 'Basilio Marcos - Full-Stack Web Developer',
-    template: '%s | Basilio Marcos',
+    default: 'Basilio Markos - Full-Stack Web Developer',
+    template: '%s | Basilio Markos',
   },
   description:
     '23-year-old Full-Stack developer with 5+ years of remote work experience. Specializing in React, Next.js, TypeScript and modern web technologies.',
@@ -29,19 +33,19 @@ export const metadata: Metadata = {
     'Remote Developer',
     'Web Development',
   ],
-  authors: [{ name: 'Basilio Marcos' }],
-  creator: 'Basilio Marcos',
+  authors: [{ name: 'Basilio Markos' }],
+  creator: 'Basilio Markos',
   openGraph: {
     type: 'website',
     locale: 'en_US',
-    url: 'https://basilio-marcos.dev',
-    title: 'Basilio Marcos - Full-Stack Web Developer',
+    url: 'https://basilio-markos.dev',
+    title: 'Basilio Markos - Full-Stack Web Developer',
     description: '23-year-old Full-Stack developer with 5+ years of remote work experience.',
-    siteName: 'Basilio Marcos Portfolio',
+    siteName: 'Basilio Markos Portfolio',
   },
   twitter: {
     card: 'summary_large_image',
-    title: 'Basilio Marcos - Full-Stack Web Developer',
+    title: 'Basilio Markos - Full-Stack Web Developer',
     description: '23-year-old Full-Stack developer with 5+ years of remote work experience.',
   },
   robots: {
@@ -61,15 +65,16 @@ export const metadata: Metadata = {
   },
 }
 
-export default function RootLayout({
+export default async function RootLayout({
   children,
   params,
 }: {
   children: React.ReactNode
-  params?: { locale?: string }
+  params?: Promise<{ locale?: string }>
 }) {
+  const resolvedParams = await params
   return (
-    <html lang={params?.locale || 'en'} suppressHydrationWarning>
+    <html lang={resolvedParams?.locale || 'en'} suppressHydrationWarning>
       <head>
         <link rel="icon" href="/favicon.ico" />
       </head>

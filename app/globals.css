@@ -4,63 +4,50 @@
 /* Подключение Google Fonts */
 @import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=JetBrains+Mono:ital,wght@0,100..800;1,100..800&display=swap');
 
+@theme {
+  --color-background: #ffffff;
+  --color-foreground: #132238;
+  --color-card: #ffffff;
+  --color-card-foreground: #132238;
+  --color-primary: #a53dff;
+  --color-primary-foreground: #ffffff;
+  --color-secondary: #f0f1f3;
+  --color-secondary-foreground: #132238;
+  --color-accent: #a53dff;
+  --color-accent-foreground: #ffffff;
+  --color-muted: #f0f1f3;
+  --color-muted-foreground: #556070;
+  --color-border: #e5e7eb;
+  --color-input: #e5e7eb;
+  --color-ring: #a53dff;
+}
+
+.dark {
+  --color-background: #1a1f2e;
+  --color-foreground: #fafafa;
+  --color-card: #1f2937;
+  --color-card-foreground: #fafafa;
+  --color-primary: #b366ff;
+  --color-primary-foreground: #1a1f2e;
+  --color-secondary: #374151;
+  --color-secondary-foreground: #f3f4f6;
+  --color-accent: #b366ff;
+  --color-accent-foreground: #1a1f2e;
+  --color-muted: #374151;
+  --color-muted-foreground: #a6a6a6;
+  --color-border: #4b5563;
+  --color-input: #4b5563;
+  --color-ring: #b366ff;
+}
+
 :root {
-  /* Light Theme Variables - Based on Figma Design */
-  --background: 0 0% 100%;
-  --foreground: 213 31% 22%; /* #132238 */
-
-  --card: 0 0% 100%;
-  --card-foreground: 213 31% 22%;
-
-  --primary: 274 75% 62%; /* #A53DFF */
-  --primary-foreground: 0 0% 100%;
-
-  --secondary: 213 18% 94%; /* #F0F1F3 */
-  --secondary-foreground: 213 31% 22%;
-
-  --accent: 274 75% 62%;
-  --accent-foreground: 0 0% 100%;
-
-  --muted: 213 18% 94%;
-  --muted-foreground: 210 15% 44%; /* #556070 */
-
-  --border: 213 12% 90%;
-  --input: 213 12% 90%;
-  --ring: 274 75% 62%;
-
   --radius: 0.75rem;
-
-  /* Fonts */
   --font-inter: 'Inter', sans-serif;
   --font-jetbrains-mono: 'JetBrains Mono', monospace;
 }
 
-.dark {
-  --background: 213 31% 12%; /* Dark version of #132238 */
-  --foreground: 0 0% 98%;
-
-  --card: 213 31% 15%;
-  --card-foreground: 0 0% 98%;
-
-  --primary: 274 75% 70%; /* Slightly lighter purple for dark mode */
-  --primary-foreground: 213 31% 12%;
-
-  --secondary: 213 25% 20%;
-  --secondary-foreground: 0 0% 95%;
-
-  --accent: 274 75% 70%;
-  --accent-foreground: 213 31% 12%;
-
-  --muted: 213 25% 20%;
-  --muted-foreground: 210 15% 65%;
-
-  --border: 213 25% 25%;
-  --input: 213 25% 25%;
-  --ring: 274 75% 70%;
-}
-
 * {
-  border-color: hsl(var(--border));
+  border-color: var(--color-border);
   box-sizing: border-box;
 }
 
@@ -69,8 +56,8 @@ html {
 }
 
 body {
-  color: hsl(var(--foreground));
-  background: hsl(var(--background));
+  color: var(--color-foreground);
+  background: var(--color-background);
   font-feature-settings:
     'rlig' 1,
     'calt' 1;
@@ -92,7 +79,7 @@ body {
 
 /* Градиентный текст */
 .gradient-text {
-  background: linear-gradient(135deg, hsl(var(--primary)), hsl(var(--accent)));
+  background: linear-gradient(135deg, var(--color-primary), var(--color-accent));
   background-size: 200% 200%;
   background-clip: text;
   -webkit-background-clip: text;
@@ -105,12 +92,69 @@ body {
   backdrop-filter: blur(16px) saturate(180%);
   -webkit-backdrop-filter: blur(16px) saturate(180%);
   background-color: rgba(255, 255, 255, 0.1);
-  border: 1px solid rgba(255, 255, 255, 0.2);
 }
 
 .dark .glass-effect {
   background-color: rgba(0, 0, 0, 0.3);
-  border: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+/* Сплошной эффект для мобилки */
+.mobile-solid-header {
+  background-color: var(--color-background);
+  border-bottom: 1px solid var(--color-border);
+  min-height: 70px; /* Увеличенная высота для мобилки */
+  display: flex;
+  align-items: center;
+}
+
+/* Десктопный хидер с прозрачностью */
+@media (min-width: 1024px) {
+  .mobile-solid-header {
+    background-color: transparent !important;
+    border-bottom: none !important;
+    min-height: auto !important; /* Убираем принудительную высоту на десктопе */
+  }
+}
+
+/* Фикс для мобильного меню */
+.mobile-menu-solid {
+  background-color: var(--color-background) !important;
+  position: fixed !important;
+  top: 70px !important; /* Высота хидера */
+  left: 0 !important;
+  right: 0 !important;
+  bottom: 0 !important;
+  z-index: 40 !important;
+  overflow-y: auto !important;
+  box-shadow: 0 -2px 10px rgba(0, 0, 0, 0.1);
+  animation: slideDown 0.3s ease-out;
+}
+
+.dark .mobile-menu-solid {
+  box-shadow: 0 -2px 10px rgba(0, 0, 0, 0.3);
+}
+
+@keyframes slideDown {
+  from {
+    transform: translateY(-10px);
+    opacity: 0;
+  }
+  to {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+
+/* Отступ для контента под мобильный хидер */
+@media (max-width: 1023px) {
+  main {
+    margin-top: 70px;
+  }
+
+  /* Fallback для случаев когда main не используется */
+  body > div:first-child > div:first-child {
+    margin-top: 70px;
+  }
 }
 
 /* Hover эффекты с современными тенями */
@@ -222,20 +266,271 @@ body {
 }
 
 ::-webkit-scrollbar-track {
-  background: hsl(var(--muted));
+  background: var(--color-muted);
 }
 
 ::-webkit-scrollbar-thumb {
-  background: hsl(var(--border));
+  background: var(--color-border);
   border-radius: 4px;
 }
 
 ::-webkit-scrollbar-thumb:hover {
-  background: hsl(var(--primary) / 0.8);
+  background: color-mix(in srgb, var(--color-primary) 80%, transparent);
 }
 
 /* Selection цвета */
 ::selection {
-  background-color: hsl(var(--primary) / 0.3);
-  color: hsl(var(--primary-foreground));
+  background-color: color-mix(in srgb, var(--color-primary) 30%, transparent);
+  color: var(--color-primary-foreground);
+}
+
+/* Анимация бегущего бордера */
+.border-animated {
+  position: relative;
+}
+
+.border-animated::before,
+.border-animated::after {
+  content: '';
+  position: absolute;
+  background: color-mix(in srgb, var(--color-foreground) 10%, transparent);
+  transition: all 0.3s ease;
+  z-index: 1;
+}
+
+/* Верхняя линия - слева направо */
+.border-animated::before {
+  top: 0;
+  left: 0;
+  width: 0;
+  height: 1px;
+}
+
+.border-animated:hover::before {
+  width: 100%;
+  transition-delay: 0ms;
+}
+
+/* Правая линия - сверху вниз */
+.border-animated::after {
+  top: 0;
+  right: 0;
+  width: 1px;
+  height: 0;
+}
+
+.border-animated:hover::after {
+  height: 100%;
+  transition-delay: 300ms;
+}
+
+/* Нижняя линия - справа налево (начинается одновременно с правой) */
+.border-animated:hover .border-bottom {
+  width: 100%;
+  transition-delay: 0ms;
+}
+
+/* Левая линия - снизу вверх (начинается одновременно с верхней) */
+.border-animated:hover .border-left {
+  height: 100%;
+  transition-delay: 300ms;
+}
+
+.border-bottom {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  width: 0;
+  height: 1px;
+  background: color-mix(in srgb, var(--color-foreground) 10%, transparent);
+  transition: all 0.3s ease;
+  z-index: 1;
+}
+
+.border-left {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 1px;
+  height: 0;
+  background: color-mix(in srgb, var(--color-foreground) 10%, transparent);
+  transition: all 0.3s ease;
+  z-index: 1;
+}
+
+/* 3D Flip Animation for Project Cards */
+.perspective-1000 {
+  perspective: 1000px;
+}
+
+.preserve-3d {
+  transform-style: preserve-3d;
+}
+
+.backface-hidden {
+  backface-visibility: hidden;
+}
+
+.rotate-y-180 {
+  transform: rotateY(180deg);
+}
+
+/* Swiper Custom Styles */
+.projects-swiper {
+  overflow: hidden !important;
+  padding: 0 !important;
+}
+
+/* Prevent layout shift during hydration */
+.projects-swiper .swiper-wrapper {
+  display: flex;
+  transition: transform 0.3s ease;
+}
+
+.projects-swiper .swiper-slide {
+  transition: all 0.3s ease;
+  flex-shrink: 0;
+  width: 100%;
+}
+
+/* Prevent flash of unstyled content */
+.projects-swiper {
+  min-height: 400px;
+}
+
+/* Smooth transitions for hydration */
+.projects-swiper .swiper-slide:not(.swiper-slide-active) {
+  opacity: 0.7;
+  transform: scale(0.95);
+}
+
+.projects-swiper .swiper-slide-active {
+  opacity: 1;
+  transform: scale(1);
+}
+
+/* Pagination Styles */
+.projects-swiper .swiper-pagination {
+  position: relative !important;
+  margin-top: 2rem;
+}
+
+.projects-swiper .swiper-pagination-bullet {
+  width: 12px;
+  height: 12px;
+  background: var(--color-muted-foreground);
+  opacity: 0.3;
+  transition: all 0.3s ease;
+}
+
+.projects-swiper .swiper-pagination-bullet-active {
+  background: var(--color-primary);
+  opacity: 1;
+  transform: scale(1.2);
+}
+
+.projects-swiper .swiper-pagination-bullet:hover {
+  opacity: 0.6;
+  transform: scale(1.1);
+}
+
+/* Navigation Button Hover Effects */
+.swiper-button-prev-custom:hover,
+.swiper-button-next-custom:hover {
+  box-shadow: 0 10px 25px -5px color-mix(in srgb, var(--color-primary) 20%, transparent);
+}
+
+/* Disabled Navigation Button Styles */
+.swiper-button-disabled {
+  opacity: 0.3 !important;
+  cursor: not-allowed !important;
+  pointer-events: none !important;
+}
+
+.swiper-button-disabled:hover {
+  transform: none !important;
+  box-shadow: none !important;
+}
+
+/* Mobile Responsive Improvements */
+@media (max-width: 640px) {
+  .projects-swiper .swiper-slide {
+    border-radius: 1rem;
+  }
+
+  .swiper-button-prev-custom,
+  .swiper-button-next-custom {
+    display: block;
+  }
+
+  /* Fix 3D flip card text overlay on mobile */
+  .preserve-3d {
+    transform-style: preserve-3d;
+    -webkit-transform-style: preserve-3d;
+  }
+
+  .backface-hidden {
+    backface-visibility: hidden;
+    -webkit-backface-visibility: hidden;
+    transform: translateZ(0);
+    -webkit-transform: translateZ(0);
+  }
+
+  .rotate-y-180 {
+    transform: rotateY(180deg) translateZ(0);
+    -webkit-transform: rotateY(180deg) translateZ(0);
+  }
+
+  /* Ensure proper positioning on mobile */
+  .perspective-1000 {
+    perspective: 1000px;
+    -webkit-perspective: 1000px;
+  }
+
+  /* Force hardware acceleration */
+  .preserve-3d > div {
+    transform: translateZ(0);
+    -webkit-transform: translateZ(0);
+    will-change: transform;
+  }
+
+  /* Additional z-index management for mobile */
+  .preserve-3d > div:first-child {
+    z-index: 2;
+  }
+
+  .preserve-3d > div:last-child {
+    z-index: 1;
+  }
+
+  /* Prevent text bleeding through */
+  .backface-hidden.invisible {
+    opacity: 0 !important;
+    pointer-events: none;
+    visibility: hidden !important;
+  }
+
+  .backface-hidden.visible {
+    opacity: 1 !important;
+    pointer-events: auto;
+    visibility: visible !important;
+  }
+
+  /* Ensure proper rendering order */
+  .preserve-3d > div {
+    isolation: isolate;
+  }
+
+  /* Fix iOS Safari 3D rendering issues */
+  .perspective-1000,
+  .preserve-3d {
+    -webkit-transform-style: preserve-3d;
+    -webkit-perspective: 1000px;
+  }
+
+  /* Prevent flickering during animation */
+  .preserve-3d * {
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+  }
 }

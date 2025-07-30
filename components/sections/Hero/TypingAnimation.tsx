@@ -43,7 +43,7 @@ export function TypingAnimation({
       {displayText}
       <span 
         className={cn(
-          'animate-blink border-r-2 border-primary ml-1',
+          'animate-blink border-r-2 border-foreground ml-1',
           isComplete && 'opacity-0'
         )}
       >

@@ -8,7 +8,7 @@
   },
   "hero": {
     "greeting": "Hallo, ich bin",
-    "name": "Basilio Marcos",
+    "name": "Basilio Markos",
     "title": "Full-Stack Web-Entwickler",
     "subtitle": "Entwickle moderne Web-Anwendungen mit 5+ Jahren Remote-Arbeitserfahrung",
     "description": "23-jähriger Entwickler, spezialisiert auf React/Next.js, TypeScript und moderne Web-Technologien",
@@ -17,6 +17,11 @@
       "projects": "Projekte ansehen",
       "contact": "Kontakt aufnehmen",
       "resume": "CV herunterladen"
+    },
+    "stats": {
+      "yearsExperience": "Jahre Erfahrung",
+      "projectsCompleted": "System-Nutzer",
+      "happyClients": "Enterprise Projekte"
     }
   },
   "about": {
@@ -42,7 +47,7 @@
           "description": "Arbeit mit Vue.js, Quasar, React Native in Multi-Brand-Projekten"
         },
         {
-          "year": "2024",
+          "year": "2024+",
           "title": "Moderner Stack",
           "description": "Fokus auf Next.js 15, React 19 und moderne Architekturlösungen"
         }
@@ -56,6 +61,17 @@
         "Performance und Skalierbarkeit sind fundamental",
         "Kontinuierliches Lernen und Wachstum"
       ]
+    },
+    "cta": {
+      "viewWork": "Arbeiten ansehen",
+      "downloadCV": "CV herunterladen"
+    },
+    "stats": {
+      "yearsOld": "Jahre alt",
+      "yearsExperience": "Jahre Erfahrung",
+      "workStyle": "Arbeitsstil",
+      "workStyleValue": "Remote",
+      "projects": "System-Nutzer"
     }
   },
   "projects": {
@@ -72,76 +88,42 @@
       "current": "Aktuelles Projekt",
       "personal": "Persönliches Projekt",
       "first": "Erstes Projekt",
-      "inProgress": "In Entwicklung"
+      "inProgress": "In Entwicklung",
+      "private": "Privat"
+    },
+    "card": {
+      "viewDetails": "Details ansehen",
+      "hide": "Verbergen",
+      "technologies": "Technologien:",
+      "duration": "Dauer:",
+      "moreTechnologies": "mehr"
     },
     "cta": {
-      "viewDetails": "Details ansehen",
-      "viewCode": "Code ansehen",
-      "viewDemo": "Demo ansehen"
+      "viewCode": "Code",
+      "viewDemo": "Demo",
+      "viewAllProjects": "Alle Projekte",
+      "viewOnGithub": "Auf GitHub ansehen",
+      "liveDemo": "Live Demo",
+      "viewSourceCode": "Quellcode ansehen",
+      "viewMoreProjects": "Weitere Projekte",
+      "getInTouch": "Kontakt aufnehmen"
     },
-    "items": {
-      "ovogene-catalog": {
-        "title": "Ovogene Catalog",
-        "description": "Komplexer Spendermaterialkatalog mit Multi-Tenant-Architektur, Internationalisierung und fortgeschrittenem Filtersystem",
-        "highlights": [
-          "Multi-Tenant-Architektur",
-          "Internationalisierungssystem",
-          "Komplexes Filter- und Suchsystem",
-          "Responsives Design",
-          "AWS-Integration"
-        ]
-      },
-      "dobbi": {
-        "title": "Dobbi Laundry",
-        "description": "Vollwertige Wäscherei-Service-Plattform mit Web-Anwendung und mobiler App",
-        "highlights": [
-          "Cross-Platform-Entwicklung",
-          "React Native mit Expo",
-          "Integration von Zahlungssystemen"
-        ]
-      },
-      "driveme-ecosystem": {
-        "title": "DriveMe Ecosystem",
-        "description": "Multi-Brand-Plattform für nüchterne Fahrer mit einheitlicher Codebasis für drei verschiedene Marken",
-        "highlights": [
-          "3 Marken in einer Codebasis",
-          "Vue.js und Quasar Framework",
-          "Cross-Platform mobile Apps",
-          "Komplexe Geschäftslogik"
-        ]
-      },
-      "swan-admin": {
-        "title": "SWAN Trading Platform",
-        "description": "Verwaltungspanel für Trading-Plattform mit React Admin und komplexen Management-Interfaces",
-        "highlights": [
-          "React Admin Framework",
-          "Komplexe Formulare und Validierung",
-          "Big Data Management"
-        ]
-      },
-      "mijnzetel": {
-        "title": "MijnZetel Politics",
-        "description": "Politische Nachrichtenplattform mit mobiler App (erstes eigenständiges Projekt mit Verbesserungspotenzial)",
-        "highlights": [
-          "React Native Entwicklung",
-          "Erstes eigenständiges Projekt",
-          "Erfahrung mit Nachrichteninhalten"
-        ]
-      },
-      "chartertickets": {
-        "title": "CharterTickets",
-        "description": "Flugticket-Aggregator - erste kommerzielle Erfahrung über 10 Monate",
-        "highlights": [
-          "PHP und Yii2 Framework",
-          "Erste kommerzielle Erfahrung",
-          "API-Integration von Fluggesellschaften"
-        ]
-      }
+    "messages": {
+      "linksWillBeAddedWhenDeployed": "Links werden hinzugefügt, wenn das Projekt bereitgestellt wird.",
+      "sourceCodeAndLiveDemoNotPubliclyAvailable": "Dies ist ein vertrauliches Projekt. Quellcode und Live-Demo sind nicht öffentlich verfügbar."
     }
   },
   "skills": {
     "title": "Technische Fähigkeiten",
     "subtitle": "Technologien und Tools, mit denen ich arbeite",
+    "mainTitle": "Technische Fähigkeiten",
+    "mainSubtitle": "Technologien, die ich beherrsche",
+    "description": "Ein umfassendes Toolkit zum Erstellen moderner, skalierbarer Webanwendungen",
+    "showAllTechnologies": "Alle Technologien anzeigen",
+    "fullStackTechnologies": "Technologien",
+    "allTechnologiesIWorkWith": "Technologien, mit denen ich gearbeitet habe",
+    "levelsBasedOnCommercialExperience": "* Niveaus basieren auf kommerzieller Erfahrung",
+    "mainTechnologiesShown": "* Haupttechnologien angezeigt",
     "categories": {
       "frontend": {
         "title": "Frontend",
@@ -161,13 +143,30 @@
       }
     },
     "experience": "Jahre Erfahrung",
-    "proficiency": "Kenntnisstand"
+    "proficiency": "Kenntnisstand",
+    "levels": {
+      "expert": "Experte",
+      "advanced": "Fortgeschritten",
+      "intermediate": "Mittelstufe"
+    }
   },
   "contact": {
     "title": "Lass uns zusammenarbeiten",
     "subtitle": "Bereit für neue Herausforderungen und interessante Projekte",
     "description": "Wenn Sie eine Projektidee oder Stelle haben, bei der ich helfen kann, würde ich gerne von Ihnen hören. Immer offen für die Diskussion neuer Möglichkeiten.",
     "cta": "Kontakt aufnehmen",
+    "buttons": {
+      "sendEmail": "E-Mail senden",
+      "viewGithub": "GitHub ansehen"
+    },
+    "availability": {
+      "title": "Verfügbar für:",
+      "fullTime": "Vollzeitstellen",
+      "freelance": "Freelance-Projekte",
+      "consultations": "Beratung",
+      "support": "Projektunterstützung",
+      "responseTime": "Antwortzeit: Normalerweise innerhalb von 24 Stunden"
+    },
     "info": {
       "email": "E-Mail",
       "location": "Standort",
@@ -189,15 +188,16 @@
     }
   },
   "footer": {
-    "madeWith": "Erstellt mit",
-    "technologies": "Next.js, TypeScript, Tailwind CSS und HeroUI",
-    "rights": "Alle Rechte vorbehalten"
+    "rights": "Alle Rechte vorbehalten",
+    "description": "Entwickler, der Geschäftslösungen erstellt."
   },
   "theme": {
     "toggle": "Theme wechseln",
     "light": "Hell",
     "dark": "Dunkel",
-    "system": "System"
+    "system": "System",
+    "switchToDark": "Zu dunklem Theme wechseln",
+    "switchToLight": "Zu hellem Theme wechseln"
   },
   "language": {
     "toggle": "Sprache ändern",
@@ -205,5 +205,159 @@
     "russian": "Русский",
     "english": "English",
     "german": "Deutsch"
+  },
+  "workProcess": {
+    "title": "Mein Entwicklungs-",
+    "titleAccent": "Prozess",
+    "subtitle": "Ein strukturierter Ansatz zur Bereitstellung außergewöhnlicher Web-Lösungen.",
+    "description": "Jedes erfolgreiche Projekt beginnt mit dem Verständnis des Problems. Ich folge einer bewährten Methodik, die effiziente Entwicklung, klare Kommunikation und herausragende Ergebnisse gewährleistet.",
+    "additionalInfo": "Vom ersten Konzept bis zur finalen Bereitstellung wird jede Phase sorgfältig geplant und mit Aufmerksamkeit für Details, Skalierbarkeit und Benutzererfahrung ausgeführt.",
+    "steps": [
+      {
+        "title": "Erforschung & Planung",
+        "description": "Tiefgreifende Analyse der Geschäftsanforderungen, Zielgruppenforschung und umfassende technische Architekturplanung"
+      },
+      {
+        "title": "Design & Architektur",
+        "description": "Erstellung intuitiver UI/UX-Designs und Gestaltung skalierbarer Systemarchitektur für optimale Leistung"
+      },
+      {
+        "title": "Entwicklung",
+        "description": "Schreiben von sauberem, leistungsfähigem Code unter Verwendung moderner Praktiken und Technologien"
+      },
+      {
+        "title": "Bereitstellung & Optimierung",
+        "description": "Sichere Bereitstellung, Monitoring-Setup und Leistungsoptimierung für die Produktionsumgebung"
+      }
+    ],
+    "advantagesTitle": "Wichtige Vorteile",
+    "advantages": [
+      {
+        "title": "Transparenz",
+        "description": "Klare Zeitpläne und kontinuierliche Berichterstattung",
+        "color": "emerald"
+      },
+      {
+        "title": "Qualität",
+        "description": "Kontrolle in jeder Entwicklungsphase",
+        "color": "blue"
+      },
+      {
+        "title": "Skalierbarkeit",
+        "description": "Bereit für Wachstum und Veränderungen",
+        "color": "purple"
+      },
+      {
+        "title": "Ergebnisse",
+        "description": "Fokus auf die Geschäftsziele des Kunden",
+        "color": "orange"
+      }
+    ]
+  },
+  "pages": {
+    "projects": {
+      "title": "Alle Projekte",
+      "subtitle": "Vollständige Portfolio-Übersicht",
+      "description": "Erkunden Sie mein vollständiges Projektportfolio, das von aktuellen kommerziellen Arbeiten bis hin zu persönlichen Experimenten und ersten Erfahrungen reicht.",
+      "back": "Zurück"
+    },
+    "projectDetail": {
+      "back": "Zurück"
+    }
+  },
+  "projectData": {
+    "ovogene-catalog": {
+      "description": "Entwickelte eine Web-Plattform für Spenderkatalog für medizinische Kliniken. Erstellte ein System mit Unterstützung für mehrere Marken, jede mit eigenem Design und Einstellungen. Implementierte ein komplexes Such-, Filter- und Bestellverwaltungssystem mit vollständigem Zyklus von der Erstellung bis zur Lieferung.",
+      "role": "Full-Stack Entwickler",
+      "highlights": [
+        "Unterstützung für mehrere Marken in einem System",
+        "Rollen- und Berechtigungssystem mit detaillierter Autorisierung",
+        "Komplexes Filter- und Suchsystem",
+        "Vollfunktions-Admin-Panel",
+        "AWS-Integration (S3, SES)"
+      ]
+    },
+    "mijnzetel": {
+      "description": "Entwickelte eine plattformübergreifende Anwendung für politische Nachrichten und Umfragen. Erstellte ein System mit Unterstützung für iOS, Android und Web auf einer einzigen Codebasis. Implementierte Authentifizierung, Abstimmungssystem, Newsfeed und Content-Management über Firebase.",
+      "role": "Solo Entwickler",
+      "highlights": [
+        "Plattformübergreifende Entwicklung (iOS, Android, Web)",
+        "Authentifizierungs- und Benutzerverwaltungssystem",
+        "Echtzeit-Datenaktualisierungen über Firebase",
+        "Abstimmungs- und Umfragesystem",
+        "Responsives Design mit Tailwind CSS"
+      ]
+    },
+    "mobile-laundry": {
+      "description": "Entwickelte von Grund auf eine plattformübergreifende mobile Anwendung für Wäschereiservice. Erstellte ein Bestellsystem mit Logistik-Service-Integration, Zwei-Faktor-Authentifizierung und Push-Benachrichtigungen. Implementierte B2B- und B2C-Segmentierung mit verschiedenen Registrierungsabläufen.",
+      "role": "Frontend Entwickler",
+      "note": "Projektname aufgrund NDA verborgen",
+      "highlights": [
+        "Plattformübergreifende Entwicklung (iOS, Android)",
+        "Bestellsystem mit Logistik-Integration",
+        "Zwei-Faktor-Authentifizierung und Push-Benachrichtigungen",
+        "B2B/B2C-Segmentierung mit verschiedenen Abläufen",
+        "Firebase Analytics und detaillierte Analysen"
+      ]
+    },
+    "admin-laundry": {
+      "description": "Wartete und entwickelte ein administratives Panel für Wäschereiservice-Management. Arbeitete mit bestehender Vue.js-Architektur, fügte neue Funktionen für Bestellverwaltung, Logistik-Service-Integration und Benachrichtigungssystem hinzu.",
+      "role": "Frontend Entwickler",
+      "note": "Projektname aufgrund NDA verborgen",
+      "highlights": [
+        "Wartung und Entwicklung der Vue.js-Anwendung",
+        "Integration mit Logistik-APIs",
+        "Bestellverwaltungs- und Lieferungssystem",
+        "Push-Benachrichtigungen und Service Workers",
+        "Zwei-Faktor-Authentifizierung (2FA)"
+      ]
+    },
+    "driver-passenger-app": {
+      "description": "Führte Migration der Web-Anwendung von Vuetify zu Quasar Framework durch und teilte eine einzige Codebasis in mehrere separate plattformübergreifende Anwendungen (Web, iOS, Android) auf. Jede Anwendung enthält jetzt eine Marke. Implementierte Reisebuchungssystem, Benutzerprofilverwaltung und mehrsprachige Unterstützung.",
+      "role": "Frontend Entwickler",
+      "note": "Markennamen aufgrund NDA verborgen",
+      "highlights": [
+        "Migration von Vuetify zu Quasar Framework",
+        "Aufteilung der einzigen Codebasis in mehrere Anwendungen",
+        "Plattformübergreifende Entwicklung (Web, iOS, Android)",
+        "Separate Anwendung für jede Marke",
+        "Rollensystem (Passagier, Fahrer, Administrator)"
+      ]
+    },
+    "driver-passenger-admin": {
+      "description": "Warte und entwickle ein umfassendes administratives Panel für Transport-Ökosystem-Management. Arbeite mit bestehender Vue.js-Architektur, füge neue Funktionen für Reiseverwaltung, Fahrer, Passagiere und komplexes Preissystem hinzu. Admin-Panel unterstützt Multi-Brand-Architektur für die Verwaltung aller Marken.",
+      "role": "Frontend Entwickler",
+      "note": "Markennamen aufgrund NDA verborgen",
+      "highlights": [
+        "Wartung und Entwicklung der Vue.js-Anwendung",
+        "Komplexes Reise- und Statusverwaltungssystem",
+        "Multi-Brand-Architektur für die Verwaltung aller Marken",
+        "Rollen- und Berechtigungssystem (Admin, Support, Finance)",
+        "Google Maps-Integration und analytische Diagramme"
+      ]
+    },
+    "driver-passenger-pdf-generator": {
+      "description": "Markierte alle HTML-Vorlagen für PDF-Rechnungsgenerierung mit Unterstützung für mehrere Marken. Richtete API-Endpunkte für die Generierung verschiedener Rechnungstypen ein. Arbeitete mit bestehendem Node.js-Mikroservice, erstellte Multi-Brand-Architektur mit verschiedenen Vorlagen für jede Marke und implementierte Internationalisierung.",
+      "role": "Frontend Entwickler",
+      "note": "Markennamen aufgrund NDA verborgen",
+      "highlights": [
+        "HTML-Vorlagen-Markup für PDF-Generierung",
+        "API-Endpunkte-Setup für verschiedene Rechnungstypen",
+        "Multi-Brand-Unterstützung mit verschiedenen Vorlagen",
+        "Internationalisierung (EN/NL) mit i18next",
+        "Integration mit bestehendem Mikroservice"
+      ]
+    },
+    "chartertickets": {
+      "description": "Wartete und entwickelte bestehendes Flugbuchungssystem mit Integration von 30+ Fluggesellschaften. Arbeitete mit modularer Architektur auf Yii2 Framework, integrierte zwei neue Partner in das System, wartete API für Partner und Promo-Code-System. Das System umfasste Multi-Währung, Partnerprogramm und asynchrone Bestellverarbeitung.",
+      "role": "Full-Stack Entwickler",
+      "highlights": [
+        "Wartung und Entwicklung des bestehenden Systems",
+        "Integration von zwei neuen Partnern in das System",
+        "Arbeit mit modularer Yii2 Framework-Architektur",
+        "API-Unterstützung für Partner und Promo-Code-System",
+        "Asynchrone Verarbeitung über Redis-Warteschlangen"
+      ]
+    }
   }
 }

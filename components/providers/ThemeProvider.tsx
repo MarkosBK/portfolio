@@ -2,6 +2,7 @@
 
 import { ThemeProvider as NextThemesProvider } from 'next-themes'
 import { HeroUIProvider } from '@heroui/react'
+import { ThemeColorProvider } from './ThemeColorProvider'
 
 interface ThemeProviderProps {
   children: React.ReactNode
@@ -16,6 +17,7 @@ export function ThemeProvider({ children }: ThemeProviderProps) {
       disableTransitionOnChange
     >
       <HeroUIProvider>
+        <ThemeColorProvider />
         {children}
       </HeroUIProvider>
     </NextThemesProvider>

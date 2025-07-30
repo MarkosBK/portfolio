@@ -1,10 +1,11 @@
 'use client'
 
 import { useTranslations } from 'next-intl'
-import { Button } from '@heroui/react'
-import { Mail, Download, ExternalLink } from 'lucide-react'
+import { Button } from '@/components/ui/Button'
+import { Download, ExternalLink } from 'lucide-react'
 import { m } from 'framer-motion'
 import Image from 'next/image'
+import SocialLinks from '@/components/ui/SocialLinks'
 
 interface StatCardProps {
   value: string
@@ -12,9 +13,9 @@ interface StatCardProps {
 }
 
 const StatCard = ({ value, label }: StatCardProps) => (
-  <div className="flex flex-col items-center py-4">
-    <span className="text-foreground text-2xl font-bold">{value}</span>
-    <span className="text-muted-foreground text-center text-sm">{label}</span>
+  <div className="flex flex-col items-center px-1 py-3 sm:px-2 sm:py-4">
+    <span className="text-foreground text-xl font-bold sm:text-2xl">{value}</span>
+    <span className="text-muted-foreground text-center text-xs sm:text-sm">{label}</span>
   </div>
 )
 
@@ -25,71 +26,81 @@ export default function Hero() {
     <section className="bg-background relative min-h-screen overflow-hidden">
       {/* Background Decorations */}
       <div className="absolute inset-0 overflow-hidden">
-        <div className="absolute top-1/4 left-0 h-96 w-96 -translate-x-1/2 rounded-full bg-purple-400/20 blur-3xl dark:bg-purple-200/20"></div>
-        <div className="absolute top-1/3 right-0 h-80 w-80 translate-x-1/2 rounded-full bg-purple-400/20 blur-3xl dark:bg-blue-200/20"></div>
-        <div className="absolute bottom-1/4 left-1/3 h-64 w-64 rounded-full bg-purple-400/20 blur-3xl dark:bg-pink-200/20"></div>
+        <m.div
+          initial={{ opacity: 0, scale: 0.8 }}
+          animate={{ opacity: 1, scale: 1 }}
+          transition={{ duration: 1.5, delay: 0.2 }}
+          className="absolute top-1/4 left-0 h-48 w-48 -translate-x-1/2 rounded-full bg-purple-300/20 blur-3xl sm:h-96 sm:w-96 dark:bg-purple-200/20"
+        ></m.div>
+        <m.div
+          initial={{ opacity: 0, scale: 0.8 }}
+          animate={{ opacity: 1, scale: 1 }}
+          transition={{ duration: 1.5, delay: 0.4 }}
+          className="absolute top-1/3 right-0 h-40 w-40 translate-x-1/2 rounded-full bg-purple-300/20 blur-3xl sm:h-80 sm:w-80 dark:bg-blue-200/20"
+        ></m.div>
+        <m.div
+          initial={{ opacity: 0, scale: 0.8 }}
+          animate={{ opacity: 1, scale: 1 }}
+          transition={{ duration: 1.5, delay: 0.6 }}
+          className="absolute bottom-1/4 left-1/3 h-32 w-32 rounded-full bg-purple-300/20 blur-3xl sm:h-64 sm:w-64 dark:bg-pink-200/20"
+        ></m.div>
       </div>
 
-      <div className="relative z-10 mx-auto max-w-7xl px-6 pt-20 lg:px-8">
-        <div className="grid min-h-[80vh] items-center gap-12 lg:grid-cols-2">
+      <div className="relative z-10 mx-auto max-w-7xl px-4 pt-16 sm:px-6 sm:pt-20 lg:px-8">
+        <div className="grid min-h-[80vh] items-center gap-8 sm:gap-12 lg:grid-cols-2">
           {/* Left Content */}
           <m.div
             initial={{ opacity: 0, x: -50 }}
             animate={{ opacity: 1, x: 0 }}
             transition={{ duration: 0.8 }}
-            className="space-y-8"
+            className="order-2 space-y-6 sm:space-y-8 lg:order-1"
           >
-            <div className="space-y-6">
+            <div className="space-y-4 sm:space-y-6">
               <div className="space-y-2">
-                <p className="text-primary text-lg font-semibold tracking-wide uppercase">
+                <p className="text-foreground text-base font-semibold tracking-wide uppercase sm:text-lg">
                   {t('greeting')}
                 </p>
-                <h1 className="text-foreground text-5xl leading-tight font-bold lg:text-7xl">
+                <h1 className="text-foreground text-3xl leading-tight font-bold sm:text-5xl lg:text-7xl">
                   <span className="text-foreground">{t('name')}</span>
                 </h1>
               </div>
 
               <div className="flex items-center space-x-2">
-                <h2 className="text-foreground text-xl font-semibold lg:text-2xl">{t('title')}</h2>
-                <span className="text-primary animate-pulse text-2xl">|</span>
+                <h2 className="text-foreground text-lg font-semibold sm:text-xl lg:text-2xl">
+                  {t('title')}
+                </h2>
+                <span className="text-foreground animate-pulse text-xl sm:text-2xl">|</span>
               </div>
             </div>
 
-            <div className="space-y-4">
-              <p className="text-muted-foreground max-w-md text-lg leading-relaxed">
+            <div className="space-y-3 sm:space-y-4">
+              <p className="text-muted-foreground max-w-md text-base leading-relaxed sm:text-lg">
                 {t('subtitle')}
               </p>
-              <p className="text-muted-foreground max-w-md leading-relaxed">{t('description')}</p>
+              <p className="text-muted-foreground max-w-md text-sm leading-relaxed sm:text-base">
+                {t('description')}
+              </p>
             </div>
 
-            <div className="flex flex-wrap gap-4 pt-4">
+            <div className="flex flex-col gap-3 pt-2 sm:flex-row sm:gap-4 sm:pt-4">
               <Button
+                variant="outline"
                 size="lg"
-                color="primary"
-                className="bg-primary text-primary-foreground hover:bg-primary/90 cursor-pointer px-8 font-semibold shadow-lg transition-all duration-200 hover:scale-105 hover:shadow-xl"
+                startContent={<ExternalLink size={18} className="sm:h-5 sm:w-5" />}
+                as="a"
+                href="#projects"
+                className="w-full sm:w-auto"
               >
-                <Mail size={20} className="mr-2" />
-                Contact Me
+                {t('cta.projects')}
               </Button>
 
               <Button
+                variant="outline"
                 size="lg"
-                variant="bordered"
-                color="primary"
-                startContent={<ExternalLink size={20} />}
-                className="border-primary text-primary hover:bg-primary hover:text-primary-foreground cursor-pointer border-2 px-6 font-semibold transition-all duration-200 hover:scale-105 hover:shadow-lg"
+                startContent={<Download size={18} className="sm:h-5 sm:w-5" />}
+                className="w-full sm:w-auto"
               >
-                View Portfolio
-              </Button>
-
-              <Button
-                size="lg"
-                variant="bordered"
-                color="primary"
-                startContent={<Download size={20} />}
-                className="border-primary text-primary hover:bg-primary hover:text-primary-foreground cursor-pointer border-2 px-6 font-semibold transition-all duration-200 hover:scale-105 hover:shadow-lg"
-              >
-                Download Resume
+                {t('cta.resume')}
               </Button>
             </div>
           </m.div>
@@ -99,26 +110,36 @@ export default function Hero() {
             initial={{ opacity: 0, x: 50 }}
             animate={{ opacity: 1, x: 0 }}
             transition={{ duration: 0.8, delay: 0.2 }}
-            className="relative"
+            className="relative order-1 lg:order-2"
           >
-            <div className="relative mx-auto w-full max-w-lg">
+            <div className="relative mx-auto w-full max-w-sm sm:max-w-lg">
               {/* Profile Image Container */}
-              <div className="shadow-tech-xl relative overflow-hidden rounded-[25px]">
+              <div className="shadow-tech-xl relative overflow-hidden rounded-[20px] sm:rounded-[25px]">
                 <div className="relative aspect-[4/5] w-full">
                   <Image
                     src="/images/main-photo.webp"
-                    alt="Basilio Marcos - Full-Stack Web Developer"
+                    alt="Basilio Markos - Full-Stack Web Developer"
                     fill
                     className="object-cover"
                     priority
-                    sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
+                    sizes="(max-width: 640px) 100vw, (max-width: 768px) 80vw, (max-width: 1200px) 50vw, 33vw"
                   />
                 </div>
               </div>
 
               {/* Decorative Elements */}
-              <div className="bg-primary/60 dark:bg-primary/20 absolute -top-4 -right-4 h-20 w-20 rounded-full blur-xl"></div>
-              <div className="bg-secondary/70 dark:bg-secondary/20 absolute -bottom-4 -left-4 h-32 w-32 rounded-full blur-xl"></div>
+              <m.div
+                initial={{ opacity: 0, scale: 0.5 }}
+                animate={{ opacity: 1, scale: 1 }}
+                transition={{ duration: 1.2, delay: 0.8 }}
+                className="bg-muted/20 dark:bg-muted/20 absolute -top-2 -right-2 h-12 w-12 rounded-full blur-xl sm:-top-4 sm:-right-4 sm:h-20 sm:w-20"
+              ></m.div>
+              <m.div
+                initial={{ opacity: 0, scale: 0.5 }}
+                animate={{ opacity: 1, scale: 1 }}
+                transition={{ duration: 1.2, delay: 1.0 }}
+                className="bg-secondary/70 dark:bg-secondary/20 absolute -bottom-2 -left-2 h-20 w-20 rounded-full blur-xl sm:-bottom-4 sm:-left-4 sm:h-32 sm:w-32"
+              ></m.div>
             </div>
 
             {/* Social Links - Floating */}
@@ -126,36 +147,10 @@ export default function Hero() {
               initial={{ opacity: 0, y: 20 }}
               animate={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.8, delay: 0.6 }}
-              className="absolute bottom-8 left-8"
+              className="absolute bottom-4 left-4 rounded-xl backdrop-blur-sm sm:bottom-8 sm:left-8"
             >
-              <div className="bg-background/95 shadow-tech-lg flex gap-3 rounded-xl border p-4 backdrop-blur-sm">
-                <Button
-                  isIconOnly
-                  size="sm"
-                  variant="flat"
-                  className="h-12 w-12 cursor-pointer bg-blue-600 text-white transition-all duration-200 hover:scale-110 hover:bg-blue-700"
-                  aria-label="Facebook"
-                >
-                  <div className="h-5 w-5 rounded-sm bg-white"></div>
-                </Button>
-                <Button
-                  isIconOnly
-                  size="sm"
-                  variant="flat"
-                  className="h-12 w-12 cursor-pointer bg-gray-800 text-white transition-all duration-200 hover:scale-110 hover:bg-gray-900"
-                  aria-label="GitHub"
-                >
-                  <div className="h-5 w-5 rounded-sm bg-white"></div>
-                </Button>
-                <Button
-                  isIconOnly
-                  size="sm"
-                  variant="flat"
-                  className="h-12 w-12 cursor-pointer bg-blue-700 text-white transition-all duration-200 hover:scale-110 hover:bg-blue-800"
-                  aria-label="LinkedIn"
-                >
-                  <div className="h-5 w-5 rounded-sm bg-white"></div>
-                </Button>
+              <div className="bg-background/10 shadow-tech-lg rounded-xl border p-3 sm:p-4">
+                <SocialLinks showTelegram={true} showEmail={true} />
               </div>
             </m.div>
           </m.div>
@@ -166,13 +161,12 @@ export default function Hero() {
           initial={{ opacity: 0, y: 50 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.8, delay: 0.4 }}
-          className="mt-16 mb-20"
+          className="mt-12 mb-16 sm:mt-16 sm:mb-20"
         >
-          <div className="bg-background/90 shadow-tech-lg hover:shadow-tech-xl mx-auto max-w-2xl rounded-xl border p-8 backdrop-blur-sm transition-shadow duration-300">
-            <div className="divide-border grid grid-cols-3 divide-x">
-              <StatCard value="5+" label="Years Experience" />
-              <StatCard value="50+" label="Projects Completed" />
-              <StatCard value="25+" label="Happy Clients" />
+          <div className="bg-background/90 shadow-tech-lg hover:shadow-tech-xl mx-auto max-w-sm rounded-xl border p-6 backdrop-blur-sm transition-shadow duration-300 sm:max-w-2xl sm:p-8">
+            <div className="divide-border grid grid-cols-2 items-center divide-x">
+              <StatCard value="5+" label={t('stats.yearsExperience')} />
+              <StatCard value="10K+" label={t('stats.projectsCompleted')} />
             </div>
           </div>
         </m.div>
