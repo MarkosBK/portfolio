@@ -5,7 +5,15 @@ import { Button } from '@/components/ui/Button'
 import { Download, ExternalLink } from 'lucide-react'
 import { m } from 'framer-motion'
 import Image from 'next/image'
-import { Link } from '@/i18n/routing'
+
+const handleDownloadResume = () => {
+  const link = document.createElement('a')
+  link.href = '/portfolio-cv.pdf'
+  link.download = 'portfolio-cv.pdf'
+  document.body.appendChild(link)
+  link.click()
+  document.body.removeChild(link)
+}
 
 export default function About() {
   const t = useTranslations('about')
@@ -92,8 +100,7 @@ export default function About() {
                 size="lg"
                 startContent={<Download size={18} className="sm:h-5 sm:w-5" />}
                 className="w-full cursor-pointer sm:w-auto"
-                as={Link}
-                href="/cv"
+                onClick={handleDownloadResume}
               >
                 {t('cta.downloadCV')}
               </Button>

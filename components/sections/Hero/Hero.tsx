@@ -7,6 +7,15 @@ import { m } from 'framer-motion'
 import Image from 'next/image'
 import SocialLinks from '@/components/ui/SocialLinks'
 
+const handleDownloadResume = () => {
+  const link = document.createElement('a')
+  link.href = '/portfolio-cv.pdf'
+  link.download = 'portfolio-cv.pdf'
+  document.body.appendChild(link)
+  link.click()
+  document.body.removeChild(link)
+}
+
 interface StatCardProps {
   value: string
   label: string
@@ -99,6 +108,7 @@ export default function Hero() {
                 size="lg"
                 startContent={<Download size={18} className="sm:h-5 sm:w-5" />}
                 className="w-full sm:w-auto"
+                onClick={handleDownloadResume}
               >
                 {t('cta.resume')}
               </Button>
