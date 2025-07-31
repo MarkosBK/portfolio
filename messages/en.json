@@ -8,66 +8,65 @@
   },
   "hero": {
     "greeting": "Hi, I'm",
-    "name": "Basilio Markos",
-    "title": "Full-Stack Web Developer",
-    "subtitle": "Building modern web applications with 5+ years of remote work experience",
-    "description": "23-year-old developer specializing in React/Next.js, TypeScript and modern web technologies",
+    "name": "Marcos Basilio",
+    "title": "Full-Stack Developer",
+    "subtitle": "Modern Web Solutions",
+    "description": "I create web applications that help businesses grow. From idea to launch — your project is in reliable hands.",
     "scrollDown": "Scroll to about section",
     "cta": {
-      "projects": "View Projects",
+      "projects": "View Works",
       "contact": "Get in Touch",
       "resume": "Download CV"
     },
     "stats": {
       "yearsExperience": "Years Experience",
-      "projectsCompleted": "System Users",
-      "happyClients": "Enterprise Projects"
+      "projectsCompleted": "System Users"
     }
   },
   "about": {
     "title": "About Me",
-    "subtitle": "Remote-first developer passionate about building scalable solutions",
-    "description": "Over 5+ years in web development, I've evolved from a PHP beginner to an experienced Full-stack developer. I specialize in building modern web applications using React, Next.js, and TypeScript.",
+    "subtitle": "A developer who understands business",
+    "description": "For 5+ years, I've been creating web applications that solve real business problems. I work on projects from startups to corporations.",
     "journey": {
       "title": "My Journey",
       "items": [
         {
           "year": "2019",
-          "title": "First commercial experience",
-          "description": "Started with PHP and Yii2 Framework on CharterTickets project"
+          "title": "First Commercial Experience",
+          "description": "Started with PHP and Yii2 Framework in the CharterTickets project"
         },
         {
           "year": "2020-2021",
           "title": "Transition to React",
-          "description": "Mastered React and TypeScript, built first mobile applications"
+          "description": "Mastered React and TypeScript, created first mobile applications"
         },
         {
           "year": "2022-2023",
-          "title": "Full-Stack experience",
+          "title": "Full-Stack Experience",
           "description": "Worked with Vue.js, Quasar, React Native in multi-brand projects"
         },
         {
           "year": "2024+",
-          "title": "Modern stack",
-          "description": "Focus on Next.js 15, React 19, and modern architectural solutions"
+          "title": "Modern Stack",
+          "description": "Focus on modern frameworks and architectural solutions"
         }
       ]
     },
     "philosophy": {
-      "title": "Development Philosophy",
+      "title": "My Approach",
       "principles": [
-        "Code should be clean and understandable",
-        "User experience is the number one priority",
-        "Performance and scalability are fundamental",
-        "Continuous learning and growth"
+        "I create solutions that work for your business",
+        "I focus on user experience and results",
+        "I ensure reliability and security",
+        "I use modern technologies for better results"
       ]
     },
     "cta": {
-      "viewWork": "View My Work",
+      "viewWork": "View Works",
       "downloadCV": "Download CV"
     },
     "stats": {
-      "yearsOld": "Years Old",
+      "yearsOld": "Years",
       "yearsExperience": "Years Experience",
       "workStyle": "Work Style",
       "workStyleValue": "Remote",
@@ -75,8 +74,8 @@
     }
   },
   "projects": {
-    "title": "Featured Projects",
-    "subtitle": "Selected works showcasing my expertise",
+    "title": "My Works",
+    "subtitle": "Projects that deliver results",
     "categories": {
       "all": "All",
       "current": "Current",
@@ -92,7 +91,7 @@
       "private": "Private"
     },
     "card": {
-      "viewDetails": "View Details",
+      "viewDetails": "Details",
       "hide": "Hide",
       "technologies": "Technologies:",
       "duration": "Duration:",
@@ -109,59 +108,39 @@
       "getInTouch": "Get in Touch"
     },
     "messages": {
-      "linksWillBeAddedWhenDeployed": "Links will be added when the project is deployed.",
+      "linksWillBeAddedWhenDeployed": "Links will be added after project deployment.",
       "sourceCodeAndLiveDemoNotPubliclyAvailable": "This is a confidential project. Source code and live demo are not publicly available."
     }
   },
   "skills": {
-    "title": "Technical Skills",
-    "subtitle": "Technologies and tools I work with",
+    "title": "Skills",
+    "subtitle": "Technologies for your projects",
     "mainTitle": "Technical Skills",
-    "mainSubtitle": "Technologies I Master",
-    "description": "A comprehensive toolkit for building modern, scalable web applications",
+    "mainSubtitle": "Technologies I master",
+    "description": "Tools and technologies for creating quality web applications.",
     "showAllTechnologies": "Show all technologies",
     "fullStackTechnologies": "Technologies",
-    "allTechnologiesIWorkWith": "Technologies I've worked with",
+    "allTechnologiesIWorkWith": "Technologies I work with",
     "levelsBasedOnCommercialExperience": "* Levels based on commercial experience",
     "mainTechnologiesShown": "* Main technologies shown",
-    "categories": {
-      "frontend": {
-        "title": "Frontend",
-        "description": "Modern frontend technologies"
-      },
-      "backend": {
-        "title": "Backend",
-        "description": "Server technologies and databases"
-      },
-      "mobile": {
-        "title": "Mobile",
-        "description": "Cross-platform mobile development"
-      },
-      "tools": {
-        "title": "Tools",
-        "description": "DevOps and development tools"
-      }
-    },
-    "experience": "years experience",
-    "proficiency": "Proficiency level",
     "levels": {
-      "expert": "Expert",
-      "advanced": "Advanced",
-      "intermediate": "Intermediate"
+      "expert": "Advanced",
+      "advanced": "Good command",
+      "intermediate": "Basic"
     }
   },
   "contact": {
-    "title": "Let's Work Together",
-    "subtitle": "Ready for new challenges and interesting projects",
-    "description": "If you have a project idea or vacancy I can help with, I'd love to hear from you. Always open to discussing new opportunities.",
-    "cta": "Get in Touch",
+    "title": "Let's work together",
+    "subtitle": "Ready to help with your project",
+    "description": "Have a project idea? Let's discuss how I can help. I create web applications and mobile solutions that deliver results. Always open to new technologies and interesting challenges. Contact me to discuss your project.",
+    "cta": "Write to me",
     "buttons": {
       "sendEmail": "Send Email",
       "viewGithub": "View GitHub"
     },
     "availability": {
       "title": "Available for:",
-      "fullTime": "Full-time positions",
+      "fullTime": "Full-time employment",
       "freelance": "Freelance projects",
       "consultations": "Consultations",
       "support": "Project support",
@@ -178,7 +157,7 @@
       "email": "Email",
       "subject": "Subject",
       "message": "Message",
-      "send": "Send Message"
+      "send": "Send"
     },
     "social": {
       "github": "GitHub",
@@ -196,8 +175,8 @@
     "light": "Light",
     "dark": "Dark",
     "system": "System",
-    "switchToDark": "Switch to Dark Theme",
-    "switchToLight": "Switch to Light Theme"
+    "switchToDark": "Switch to dark theme",
+    "switchToLight": "Switch to light theme"
   },
   "language": {
     "toggle": "Change language",
@@ -207,49 +186,48 @@
     "german": "Deutsch"
   },
   "workProcess": {
-    "title": "My Development",
-    "titleAccent": "Process",
-    "subtitle": "A structured approach to delivering exceptional web solutions.",
-    "description": "Every successful project starts with understanding the problem. I follow a proven methodology that ensures efficient development, clear communication, and outstanding results.",
-    "additionalInfo": "From initial concept to final deployment, each phase is carefully planned and executed with attention to detail, scalability, and user experience.",
+    "title": "How I work",
+    "titleAccent": "on projects",
+    "subtitle": "A process that leads to results",
+    "description": "A proven approach to development that guarantees quality and timely project delivery.",
     "steps": [
       {
-        "title": "Discovery & Planning",
-        "description": "Deep analysis of business requirements, target audience research, and comprehensive technical architecture planning"
+        "title": "Analysis",
+        "description": "I study your goals and requirements to create an optimal solution"
       },
       {
-        "title": "Design & Architecture",
-        "description": "Creating intuitive UI/UX designs and designing scalable system architecture for optimal performance"
+        "title": "Design",
+        "description": "I create architecture and interfaces that will be convenient for your users"
       },
       {
         "title": "Development",
-        "description": "Writing clean, performant code using modern practices and cutting-edge technologies"
+        "description": "I implement functionality using modern technologies and best practices"
       },
       {
-        "title": "Deploy & Optimize",
-        "description": "Secure deployment, monitoring setup, and performance optimization for production environment"
+        "title": "Launch",
+        "description": "I deploy the project and configure everything necessary for stable operation"
       }
     ],
-    "advantagesTitle": "Key Advantages",
+    "advantagesTitle": "Why choose me",
     "advantages": [
       {
         "title": "Transparency",
-        "description": "Clear timelines and constant reporting",
+        "description": "Clear deadlines and constant progress reporting",
         "color": "emerald"
       },
       {
         "title": "Quality",
-        "description": "Control at every development stage",
+        "description": "Attention to detail at every stage of development",
         "color": "blue"
       },
       {
         "title": "Scalability",
-        "description": "Ready for growth and changes",
+        "description": "Architecture ready for your business growth",
         "color": "purple"
       },
       {
         "title": "Results",
-        "description": "Focus on client's business goals",
+        "description": "Focus on achieving your business goals",
         "color": "orange"
       }
     ]
@@ -258,7 +236,7 @@
     "projects": {
       "title": "All Projects",
       "subtitle": "Complete Portfolio Overview",
-      "description": "Explore my complete portfolio of projects spanning from current commercial work to personal experiments and first experiences.",
+      "description": "Explore my complete project portfolio, covering from current commercial work to personal experiments and first experience.",
       "back": "Back"
     },
     "projectDetail": {
@@ -267,10 +245,10 @@
   },
   "projectData": {
     "ovogene-catalog": {
-      "description": "Developed a web platform for donor materials catalog for medical clinics. Created a system with support for multiple brands, each with its own design and settings. Implemented a complex search, filtering, and order management system with a complete cycle from creation to delivery.",
-      "role": "Full-stack Developer",
+      "description": "Developed a web platform catalog of donor materials for medical clinics. Created a system with multi-brand support, each with its own design and settings. Implemented a complex search, filtering and order management system with a full cycle from creation to delivery.",
+      "role": "Full-stack developer",
       "highlights": [
-        "Support for multiple brands in one system",
+        "Multi-brand support in one system",
         "Role and permission system with detailed authorization",
         "Complex filter and search system",
         "Full-featured admin panel",
@@ -278,8 +256,8 @@
       ]
     },
     "mijnzetel": {
-      "description": "Developed a cross-platform application for political news and polls. Created a system with support for iOS, Android, and Web on a single codebase. Implemented authentication, voting system, news feed, and content management through Firebase.",
-      "role": "Solo Developer",
+      "description": "Developed a cross-platform application for political news and polls. Created a system with iOS, Android and Web support on a single codebase. Implemented authentication, voting system, news feed and content management through Firebase.",
+      "role": "Solo developer",
       "highlights": [
         "Cross-platform development (iOS, Android, Web)",
         "Authentication and user management system",
@@ -289,8 +267,8 @@
       ]
     },
     "mobile-laundry": {
-      "description": "Developed from scratch a cross-platform mobile application for laundry service. Created an order system with logistics service integration, two-factor authentication, and push notifications. Implemented B2B and B2C segmentation with different registration flows.",
-      "role": "Frontend Developer",
+      "description": "Developed from scratch a cross-platform mobile application for a dry cleaning service. Created an order system with logistics service integration, two-factor authentication and push notifications. Implemented B2B and B2C segmentation with different registration flows.",
+      "role": "Frontend developer",
       "note": "Project name hidden due to NDA",
       "highlights": [
         "Cross-platform development (iOS, Android)",
@@ -301,32 +279,32 @@
       ]
     },
     "admin-laundry": {
-      "description": "Maintained and developed an administrative panel for laundry service management. Worked with existing Vue.js architecture, added new features for order management, logistics service integration, and notification system.",
-      "role": "Frontend Developer",
+      "description": "Maintained and developed an administrative panel for managing a dry cleaning service. Worked with existing Vue.js architecture, added new features for order management, integration with logistics services and notification system.",
+      "role": "Frontend developer",
       "note": "Project name hidden due to NDA",
       "highlights": [
         "Maintenance and development of Vue.js application",
         "Integration with logistics APIs",
-        "Order management and delivery system",
+        "Order and delivery management system",
         "Push notifications and Service Workers",
         "Two-factor authentication (2FA)"
       ]
     },
     "driver-passenger-app": {
-      "description": "Conducted migration of web application from Vuetify to Quasar Framework and split a single codebase into several separate cross-platform applications (Web, iOS, Android). Each application now contains one brand. Implemented trip booking system, user profile management, and multilingual support.",
-      "role": "Frontend Developer",
+      "description": "Conducted migration of a web application from Vuetify to Quasar Framework and split a single codebase into several separate cross-platform applications (Web, iOS, Android). Each application now contains one brand. Implemented a trip booking system, user profile management and multilingual support.",
+      "role": "Frontend developer",
       "note": "Brand names hidden due to NDA",
       "highlights": [
         "Migration from Vuetify to Quasar Framework",
-        "Splitting single codebase into multiple applications",
+        "Splitting single codebase into several applications",
         "Cross-platform development (Web, iOS, Android)",
         "Separate application for each brand",
         "Role system (passenger, driver, administrator)"
       ]
     },
     "driver-passenger-admin": {
-      "description": "Maintain and develop a comprehensive administrative panel for transport ecosystem management. Work with existing Vue.js architecture, add new features for trip management, drivers, passengers, and complex pricing system. Admin panel supports multi-brand architecture for managing all brands.",
-      "role": "Frontend Developer",
+      "description": "I maintain and develop a comprehensive administrative panel for managing a transportation ecosystem. I work with existing Vue.js architecture, add new features for managing trips, drivers, passengers and a complex pricing system. The admin panel supports multi-brand architecture for managing all brands.",
+      "role": "Frontend developer",
       "note": "Brand names hidden due to NDA",
       "highlights": [
         "Maintenance and development of Vue.js application",
@@ -337,20 +315,20 @@
       ]
     },
     "driver-passenger-pdf-generator": {
-      "description": "Marked up all HTML templates for PDF invoice generation with support for multiple brands. Set up API endpoints for generating various types of invoices. Worked with existing Node.js microservice, created multi-brand architecture with different templates for each brand and implemented internationalization.",
-      "role": "Frontend Developer",
+      "description": "I laid out all HTML templates for generating PDF invoices with multi-brand support. I configured API endpoints for generating various types of invoices. I worked with an existing Node.js microservice, created a multi-brand architecture with different templates for each brand and implemented internationalization.",
+      "role": "Frontend developer",
       "note": "Brand names hidden due to NDA",
       "highlights": [
-        "HTML template markup for PDF generation",
-        "API endpoints setup for various invoice types",
+        "HTML template layout for PDF generation",
+        "API endpoint configuration for various invoice types",
         "Multi-brand support with different templates",
         "Internationalization (EN/NL) with i18next",
         "Integration with existing microservice"
       ]
     },
     "chartertickets": {
-      "description": "Maintained and developed existing flight booking system with integration of 30+ airlines. Worked with modular architecture on Yii2 Framework, integrated two new partners into the system, maintained API for partners and promo code system. The system included multi-currency, affiliate program, and asynchronous order processing.",
-      "role": "Full-stack Developer",
+      "description": "Maintained and developed an existing flight booking system with integration of 30+ airlines. Worked with modular architecture on Yii2 Framework, integrated two new partners into the system, maintained API for partners and promo code system. The system included multi-currency, affiliate program and asynchronous order processing.",
+      "role": "Full-stack developer",
       "highlights": [
         "Maintenance and development of existing system",
         "Integration of two new partners into the system",

@@ -35,6 +35,11 @@ export const metadata: Metadata = {
   ],
   authors: [{ name: 'Basilio Markos' }],
   creator: 'Basilio Markos',
+  icons: {
+    icon: '/favicon.ico',
+    shortcut: '/favicon.ico',
+    apple: '/favicon.ico',
+  },
   openGraph: {
     type: 'website',
     locale: 'en_US',
@@ -75,9 +80,6 @@ export default async function RootLayout({
   const resolvedParams = await params
   return (
     <html lang={resolvedParams?.locale || 'en'} suppressHydrationWarning>
-      <head>
-        <link rel="icon" href="/favicon.ico" />
-      </head>
       <body
         className={`${inter.variable} ${jetbrainsMono.variable} font-sans antialiased`}
         suppressHydrationWarning
