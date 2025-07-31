@@ -23,7 +23,7 @@ import { cn } from '@/lib/cn'
 export function Header() {
   const [isMenuOpen, setIsMenuOpen] = useState(false)
   const [mounted, setMounted] = useState(false)
-  const { theme, setTheme } = useTheme()
+  const { theme, setTheme, resolvedTheme } = useTheme()
   const t = useTranslations('navigation')
   const tTheme = useTranslations('theme')
   const tLanguage = useTranslations('language')
@@ -35,6 +35,9 @@ export function Header() {
   useEffect(() => {
     setMounted(true)
   }, [])
+
+  // Get the actual theme for display
+  const currentTheme = mounted ? resolvedTheme || theme : 'light'
 
   const navigation = [
     { name: t('about'), href: '#about' },
@@ -69,14 +72,40 @@ export function Header() {
   }
 
   const toggleTheme = () => {
-    if (mounted) {
-      setTheme(theme === 'light' ? 'dark' : 'light')
+    if (mounted && setTheme) {
+      setTheme(currentTheme === 'light' ? 'dark' : 'light')
     }
   }
 
   const toggleThemeAndCloseMenu = () => {
     toggleTheme()
     setIsMenuOpen(false)
+  }
+
+  // Render theme toggle button
+  const renderThemeToggle = (isMobile = false) => {
+    if (!mounted) {
+      return (
+        <div className="bg-muted-foreground/20 h-[18px] w-[18px] animate-pulse rounded-full"></div>
+      )
+    }
+
+    const isLight = currentTheme === 'light'
+    const Icon = isLight ? Moon : Sun
+    const label = isLight ? tTheme('switchToDark') : tTheme('switchToLight')
+
+    if (isMobile) {
+      return (
+        <>
+          <Icon size={18} className="transition-transform" />
+          <span className="text-foreground/80 group-hover:text-primary text-sm font-medium">
+            {label}
+          </span>
+        </>
+      )
+    }
+
+    return <Icon size={18} className="transition-transform hover:rotate-12" />
   }
 
   return (
@@ -127,14 +156,9 @@ export function Header() {
             onPress={toggleTheme}
             aria-label={tTheme('toggle')}
             className="hover:bg-muted cursor-pointer transition-all duration-200 hover:scale-110 focus:scale-110"
+            isDisabled={!mounted}
           >
-            {mounted && theme === 'light' ? (
-              <Moon size={18} className="transition-transform hover:rotate-12" />
-            ) : mounted && theme === 'dark' ? (
-              <Sun size={18} className="transition-transform hover:rotate-12" />
-            ) : (
-              <div className="bg-muted-foreground/20 h-[18px] w-[18px] animate-pulse rounded-full"></div>
-            )}
+            {renderThemeToggle()}
           </Button>
         </NavbarItem>
 
@@ -315,21 +339,9 @@ export function Header() {
             variant="bordered"
             onPress={toggleThemeAndCloseMenu}
             className="border-primary/20 hover:border-primary/40 hover:bg-primary/10 group w-full cursor-pointer justify-start gap-3 rounded-lg border px-4 py-3 transition-all duration-300"
+            isDisabled={!mounted}
           >
-            {mounted && theme === 'light' ? (
-              <Moon size={18} className="transition-transform" />
-            ) : mounted && theme === 'dark' ? (
-              <Sun size={18} className="transition-transform" />
-            ) : (
-              <div className="bg-muted-foreground/20 h-[18px] w-[18px] animate-pulse rounded-full"></div>
-            )}
-            <span className="text-foreground/80 group-hover:text-primary text-sm font-medium">
-              {mounted && theme === 'light'
-                ? tTheme('switchToDark')
-                : mounted && theme === 'dark'
-                  ? tTheme('switchToLight')
-                  : 'Loading...'}
-            </span>
+            {renderThemeToggle(true)}
           </Button>
         </div>
       </NavbarMenu>

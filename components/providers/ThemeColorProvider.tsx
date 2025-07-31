@@ -1,12 +1,19 @@
 'use client'
 
 import { useTheme } from 'next-themes'
-import { useEffect } from 'react'
+import { useEffect, useState } from 'react'
 
 export function ThemeColorProvider() {
   const { theme, resolvedTheme } = useTheme()
+  const [mounted, setMounted] = useState(false)
 
   useEffect(() => {
+    setMounted(true)
+  }, [])
+
+  useEffect(() => {
+    if (!mounted) return
+
     // Get the actual theme (resolvedTheme handles 'system' theme)
     const currentTheme = resolvedTheme || theme
 
@@ -35,7 +42,7 @@ export function ThemeColorProvider() {
     } else {
       updateThemeColor(themeColors.light)
     }
-  }, [theme, resolvedTheme])
+  }, [theme, resolvedTheme, mounted])
 
   return null
 }
