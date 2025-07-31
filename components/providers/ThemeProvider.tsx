@@ -15,7 +15,6 @@ export function ThemeProvider({ children }: ThemeProviderProps) {
       defaultTheme="system"
       enableSystem
       disableTransitionOnChange
-      suppressHydrationWarning
     >
       <HeroUIProvider>
         <ThemeColorProvider />
@@ -23,4 +22,4 @@ export function ThemeProvider({ children }: ThemeProviderProps) {
       </HeroUIProvider>
     </NextThemesProvider>
   )
-} 
+}
