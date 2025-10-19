@@ -1,160 +1,157 @@
-# Basilio Marcos Portfolio
+# Markos Basilio Portfolio
 
-Современный портфолио веб-разработчика, созданный с использованием Next.js 15, React 19, TypeScript и Tailwind CSS.
+Modern web developer portfolio built with Next.js 15, React 19, TypeScript and Tailwind CSS.
 
-## 🚀 Технологии
+## 🚀 Technologies
 
 - **Next.js 15** (App Router, React Server Components)
 - **React 19**
 - **TypeScript 5.6+**
 - **Tailwind CSS 4** (@tailwindcss/oxide)
-- **HeroUI** - компонентная библиотека
-- **Framer Motion 12** - анимации
-- **next-intl 3.x** - интернационализация (ua, ru, en, de)
-- **next-themes** - переключение тем
+- **HeroUI** - component library
+- **Framer Motion 12** - animations
+- **next-intl 3.x** - internationalization (en, de, es)
+- **next-themes** - theme switching
 
-## 📸 Добавление фото
+## 📸 Adding Photo
 
-Для добавления фото Basilio Marcos:
+To add Markos Basilio photo:
 
-1. **Замените файл** `public/basilio-marcos.jpg` на реальное фото
-2. **Рекомендуемые параметры**:
-   - Формат: JPG
-   - Размеры: 800x1000px или похожее соотношение сторон
-   - Размер файла: до 500KB для веб-оптимизации
-   - Стиль: профессиональное фото в голову и плечи
+1. **Replace file** `public/images/main-photo.webp` with real photo
+2. **Recommended parameters**:
+   - Format: WebP
+   - Dimensions: 800x1000px or similar aspect ratio
+   - File size: up to 500KB for web optimization
+   - Style: professional head and shoulders photo
 
-3. **Фото используется в**:
-   - Hero секции (главная страница)
-   - About секции (секция "Обо мне")
+3. **Photo is used in**:
+   - Hero section (main page)
+   - About section ("About Me" section)
 
-## 🎨 Особенности дизайна
+## 🎨 Design Features
 
-- **Адаптивный дизайн** - mobile-first подход
-- **Темная/светлая тема** - автоматическое переключение
-- **Плавные анимации** - Framer Motion
-- **Оптимизированные изображения** - Next.js Image
-- **SEO оптимизация** - метаданные и структурированные данные
+- **Responsive design** - mobile-first approach
+- **Dark/light theme** - automatic switching
+- **Smooth animations** - Framer Motion
+- **Optimized images** - Next.js Image
+- **SEO optimization** - metadata and structured data
 
-## 🌍 Поддерживаемые языки
+## 🌍 Supported Languages
 
-- 🇺🇦 Украинский (ua)
-- 🇷🇺 Русский (ru)
-- 🇺🇸 Английский (en)
-- 🇩🇪 Немецкий (de)
+- 🇺🇸 English (en)
+- 🇩🇪 German (de)
+- 🇪🇸 Spanish (es)
 
-## 🚀 Запуск проекта
+## 🚀 Running the Project
 
 ```bash
-# Установка зависимостей
+# Install dependencies
 npm install
 
-# Запуск в режиме разработки
+# Run in development mode
 npm run dev
 
-# Сборка для продакшена
+# Build for production
 npm run build
 
-# Запуск продакшн версии
+# Run production version
 npm start
 ```
 
-## 📁 Структура проекта
+## 📁 Project Structure
 
 ```
-portfolio/
-├── app/
-│   ├── [locale]/          # Локализованные страницы
-│   ├── globals.css        # Глобальные стили
-│   └── layout.tsx         # Корневой layout
-├── components/
-│   ├── sections/          # Секции страницы
-│   ├── ui/               # UI компоненты
-│   └── providers/        # Провайдеры (темы, анимации)
-├── lib/
-│   ├── constants/        # Константы и утилиты
-│   ├── data/            # JSON данные (проекты)
-│   └── utils/           # Вспомогательные функции
-├── messages/             # Переводы
-├── public/              # Статические файлы
-└── i18n/               # Конфигурация интернационализации
+├── app/                   # Next.js App Router
+│   ├── [locale]/          # Localized pages
+│   ├── globals.css        # Global styles
+│   └── layout.tsx         # Root layout
+├── components/            # React components
+│   ├── sections/          # Page sections
+│   ├── ui/               # UI components
+│   └── providers/        # Providers (themes, animations)
+├── lib/                  # Utilities and configurations
+│   ├── constants/        # Constants and utilities
+│   ├── data/            # JSON data (projects)
+│   └── utils/           # Helper functions
+├── messages/             # Translations
+├── public/              # Static files
+└── i18n/               # Internationalization configuration
 ```
 
-## 🎯 Основные секции
+## 🎯 Main Sections
 
-1. **Hero** - Главная секция с фото и призывом к действию
-2. **About** - Информация о разработчике
-3. **Work Process** - Процесс работы
-4. **Skills** - Технические навыки
-5. **Projects** - Портфолио проектов
-6. **Contact** - Контактная информация
+1. **Hero** - Main section with photo and call to action
+2. **About** - Developer information
+3. **Work Process** - Work process
+4. **Skills** - Technical skills
+5. **Projects** - Project portfolio
+6. **Contact** - Contact information
 
-## 🔧 Настройка
+## 🔧 Configuration
 
-### Редактирование проектов
+### Editing Projects
 
-Все данные проектов хранятся в `lib/data/projects.json`. Для добавления/редактирования проекта:
+All project data is stored in `lib/data/projects.json`. To add/edit a project:
 
 ```json
 {
-  "id": "unique-project-id",
+  "id": "project-id",
   "title": "Project Title",
-  "category": "current",
-  "tech": ["Next.js", "TypeScript"],
+  "category": "current|previous|personal|first",
+  "tech": ["React", "TypeScript", "Next.js"],
   "confidential": false,
+  "description": "Project description",
+  "role": "Frontend Developer",
   "highlights": ["Feature 1", "Feature 2"],
-  "github": "https://github.com/user/repo",
-  "demo": "https://demo.com",
-  "image": "/images/projects/project.jpg",
-  "duration": "6 месяцев",
-  "note": "Дополнительная информация"
+  "duration": "6 months",
+  "note": "Additional information"
 }
 ```
 
-**Категории проектов:**
+**Project categories:**
 
-- `current` - Текущие проекты
-- `previous` - Предыдущие проекты
-- `personal` - Личные проекты
-- `first` - Первые проекты
+- `current` - Current projects
+- `previous` - Previous projects
+- `personal` - Personal projects
+- `first` - First projects
 
-### Изменение цветовой схемы
+### Changing Color Scheme
 
-Отредактируйте CSS переменные в `app/globals.css`:
+Edit CSS variables in `app/globals.css`:
 
 ```css
 :root {
-  --primary: 274 75% 62%; /* Основной цвет */
-  --background: 0 0% 100%; /* Фон */
-  --foreground: 213 31% 22%; /* Текст */
+  --primary: 274 75% 62%; /* Primary color */
+  --background: 0 0% 100%; /* Background */
+  --foreground: 213 31% 22%; /* Text */
 }
 ```
 
-### Добавление новых языков
+### Adding New Languages
 
-1. Создайте файл `messages/[locale].json`
-2. Добавьте локаль в `i18n/routing.ts`
-3. Обновите middleware
+1. Create file `messages/[locale].json`
+2. Add locale to `i18n/routing.ts`
+3. Update middleware
 
-## 📱 Адаптивность
+## 📱 Responsiveness
 
-- **Mobile**: < 768px
+- **Mobile**: 320px - 768px
 - **Tablet**: 768px - 1024px
-- **Desktop**: > 1024px
+- **Desktop**: 1024px+
 
-## ⚡ Производительность
+## ⚡ Performance
 
-- **Lazy Loading** - компоненты загружаются по мере необходимости
-- **Image Optimization** - автоматическая оптимизация изображений
-- **Code Splitting** - разделение кода по страницам
-- **Bundle Analysis** - анализ размера бандла
+- **Lazy Loading** - components load as needed
+- **Image Optimization** - automatic image optimization
+- **Code Splitting** - code splitting by pages
+- **Bundle Analysis** - bundle size analysis
 
-## 🔒 Безопасность
+## 🔒 Security
 
-- **Content Security Policy** - защита от XSS
-- **HTTPS** - безопасное соединение
-- **Input Validation** - валидация пользовательского ввода
+- **Content Security Policy** - XSS protection
+- **HTTPS** - secure connection
+- **Input Validation** - user input validation
 
-## 📄 Лицензия
+## 📄 License
 
-© 2025 Basilio Marcos. Все права защищены.
+© 2025 Markos Basilio. All rights reserved.

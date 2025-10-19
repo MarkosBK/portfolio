@@ -9,8 +9,8 @@ import SocialLinks from '@/components/ui/SocialLinks'
 
 const handleDownloadResume = () => {
   const link = document.createElement('a')
-  link.href = '/portfolio-cv.pdf'
-  link.download = 'portfolio-cv.pdf'
+  link.href = '/markos-basilio-cv.pdf'
+  link.download = 'markos-basilio-cv.pdf'
   document.body.appendChild(link)
   link.click()
   document.body.removeChild(link)

@@ -5,14 +5,14 @@
     "category": "current",
     "tech": ["Next.js 14", "TypeScript", "Prisma", "PostgreSQL", "HeroUI", "AWS"],
     "confidential": false,
-    "description": "Разработал веб-платформу каталога донорских материалов для медицинских клиник. Создал систему с поддержкой нескольких брендов, каждый со своим дизайном и настройками. Реализовал сложную систему поиска, фильтрации и управления заказами с полным циклом от создания до доставки.",
-    "role": "Full-stack разработчик",
+    "description": "Developed a web platform catalog of donor materials for medical clinics. Created a system with multi-brand support, each with its own design and settings. Implemented a complex search, filtering and order management system with a full cycle from creation to delivery.",
+    "role": "Full-stack developer",
     "highlights": [
-      "Поддержка нескольких брендов в одной системе",
-      "Система ролей и разрешений с детальной авторизацией",
-      "Комплексная система фильтров и поиска",
-      "Полнофункциональная админ-панель",
-      "Интеграция с AWS (S3, SES)"
+      "Multi-brand support in one system",
+      "Role and permission system with detailed authorization",
+      "Complex filter and search system",
+      "Full-featured admin panel",
+      "AWS integration (S3, SES)"
     ],
     "image": "/images/projects/catalog.webp"
   },
@@ -22,14 +22,14 @@
     "category": "current",
     "tech": ["React Native", "Expo", "TypeScript", "Firebase", "Tailwind CSS", "Zustand"],
     "confidential": false,
-    "description": "Разработал кроссплатформенное приложение для политических новостей и опросов. Создал систему с поддержкой iOS, Android и Web на единой кодовой базе. Реализовал аутентификацию, систему голосования, новостную ленту и управление контентом через Firebase.",
-    "role": "Solo разработчик",
+    "description": "Developed a cross-platform application for political news and polls. Created a system with iOS, Android and Web support on a single codebase. Implemented authentication, voting system, news feed and content management through Firebase.",
+    "role": "Solo developer",
     "highlights": [
-      "Кроссплатформенная разработка (iOS, Android, Web)",
-      "Система аутентификации и управления пользователями",
-      "Реальное время обновления данных через Firebase",
-      "Система голосования и опросов",
-      "Адаптивный дизайн с Tailwind CSS"
+      "Cross-platform development (iOS, Android, Web)",
+      "Authentication and user management system",
+      "Real-time data updates through Firebase",
+      "Voting and polling system",
+      "Responsive design with Tailwind CSS"
     ],
     "image": "/images/projects/mijnzetel.webp"
   },
@@ -39,15 +39,15 @@
     "category": "current",
     "tech": ["React Native", "Expo", "TypeScript", "Firebase", "NativeWind"],
     "confidential": true,
-    "description": "Разработал с нуля кроссплатформенное мобильное приложение для сервиса химчистки. Создал систему заказов с интеграцией логистических сервисов, двухфакторной аутентификацией и push-уведомлениями. Реализовал B2B и B2C сегментацию с разными потоками регистрации.",
-    "role": "Frontend разработчик",
-    "note": "Название проекта скрыто в связи с NDA",
+    "description": "Developed from scratch a cross-platform mobile application for a dry cleaning service. Created an order system with logistics service integration, two-factor authentication and push notifications. Implemented B2B and B2C segmentation with different registration flows.",
+    "role": "Frontend developer",
+    "note": "Project name hidden due to NDA",
     "highlights": [
-      "Кроссплатформенная разработка (iOS, Android)",
-      "Система заказов с интеграцией логистики",
-      "Двухфакторная аутентификация и push-уведомления",
-      "B2B/B2C сегментация с разными потоками",
-      "Firebase Analytics и детальная аналитика"
+      "Cross-platform development (iOS, Android)",
+      "Order system with logistics integration",
+      "Two-factor authentication and push notifications",
+      "B2B/B2C segmentation with different flows",
+      "Firebase Analytics and detailed analytics"
     ],
     "image": "/images/projects/mobile-laundry.webp"
   },
@@ -57,15 +57,15 @@
     "category": "current",
     "tech": ["Vue.js", "Vuetify", "Vuex", "JavaScript", "SCSS"],
     "confidential": true,
-    "description": "Поддерживал и развивал административную панель для управления сервисом химчистки. Работал с существующей Vue.js архитектурой, добавлял новые функции для управления заказами, интеграции с логистическими сервисами и системы уведомлений.",
-    "role": "Frontend разработчик",
-    "note": "Название проекта скрыто в связи с NDA",
+    "description": "Maintained and developed an administrative panel for managing a dry cleaning service. Worked with existing Vue.js architecture, added new features for order management, integration with logistics services and notification system.",
+    "role": "Frontend developer",
+    "note": "Project name hidden due to NDA",
     "highlights": [
-      "Поддержка и развитие Vue.js приложения",
-      "Интеграция с логистическими API",
-      "Система управления заказами и доставкой",
-      "Push-уведомления и Service Workers",
-      "Двухфакторная аутентификация (2FA)"
+      "Maintenance and development of Vue.js application",
+      "Integration with logistics APIs",
+      "Order and delivery management system",
+      "Push notifications and Service Workers",
+      "Two-factor authentication (2FA)"
     ],
     "image": "/images/projects/admin-laundry.webp"
   },
@@ -75,15 +75,15 @@
     "category": "current",
     "tech": ["Vue.js", "Quasar", "Capacitor", "Vuex", "Firebase", "TypeScript"],
     "confidential": true,
-    "description": "Провел миграцию веб-приложения с Vuetify на Quasar Framework и разделил единую кодовую базу на несколько отдельных кроссплатформенных приложений (Web, iOS, Android). Каждое приложение теперь содержит один бренд. Реализовал систему бронирования поездок, управление профилями пользователей и многоязычную поддержку.",
-    "role": "Frontend разработчик",
-    "note": "Названия брендов скрыты в связи с NDA",
+    "description": "Conducted migration of a web application from Vuetify to Quasar Framework and split a single codebase into several separate cross-platform applications (Web, iOS, Android). Each application now contains one brand. Implemented a trip booking system, user profile management and multilingual support.",
+    "role": "Frontend developer",
+    "note": "Brand names hidden due to NDA",
     "highlights": [
-      "Миграция с Vuetify на Quasar Framework",
-      "Разделение единой кодовой базы на несколько приложений",
-      "Кроссплатформенная разработка (Web, iOS, Android)",
-      "Отдельное приложение для каждого бренда",
-      "Система ролей (пассажир, водитель, администратор)"
+      "Migration from Vuetify to Quasar Framework",
+      "Splitting single codebase into several applications",
+      "Cross-platform development (Web, iOS, Android)",
+      "Separate application for each brand",
+      "Role system (passenger, driver, administrator)"
     ],
     "image": "/images/projects/driver-passenger-app.webp"
   },
@@ -93,15 +93,15 @@
     "category": "current",
     "tech": ["Vue.js", "Vuetify", "Vuex", "Axios", "Google Maps API", "AmCharts"],
     "confidential": true,
-    "description": "Поддерживаю и развиваю комплексную административную панель для управления транспортной экосистемой. Работаю с существующей Vue.js архитектурой, добавляю новые функции для управления поездками, водителями, пассажирами и сложной системой ценообразования. Админка поддерживает multi-brand архитектуру для управления всеми брендами.",
-    "role": "Frontend разработчик",
-    "note": "Названия брендов скрыты в связи с NDA",
+    "description": "I maintain and develop a comprehensive administrative panel for managing a transportation ecosystem. I work with existing Vue.js architecture, add new features for managing trips, drivers, passengers and a complex pricing system. The admin panel supports multi-brand architecture for managing all brands.",
+    "role": "Frontend developer",
+    "note": "Brand names hidden due to NDA",
     "highlights": [
-      "Поддержка и развитие Vue.js приложения",
-      "Сложная система управления поездками и статусами",
-      "Multi-brand архитектура для управления всеми брендами",
-      "Система ролей и разрешений (admin, support, finance)",
-      "Интеграция с Google Maps и аналитическими графиками"
+      "Maintenance and development of Vue.js application",
+      "Complex trip and status management system",
+      "Multi-brand architecture for managing all brands",
+      "Role and permission system (admin, support, finance)",
+      "Google Maps integration and analytical charts"
     ],
     "image": "/images/projects/driver-passenger-admin.webp"
   },
@@ -111,15 +111,15 @@
     "category": "current",
     "tech": ["Node.js", "Express.js", "Puppeteer", "Docker", "i18next"],
     "confidential": true,
-    "description": "Сверстал все HTML шаблоны для генерации PDF-счетов с поддержкой нескольких брендов. Настроил API endpoints для генерации различных типов счетов. Работал с существующим микросервисом на Node.js, создал multi-brand архитектуру с различными шаблонами для каждого бренда и реализовал интернационализацию.",
-    "role": "Frontend разработчик",
-    "note": "Названия брендов скрыты в связи с NDA",
+    "description": "I laid out all HTML templates for generating PDF invoices with multi-brand support. I configured API endpoints for generating various types of invoices. I worked with an existing Node.js microservice, created a multi-brand architecture with different templates for each brand and implemented internationalization.",
+    "role": "Frontend developer",
+    "note": "Brand names hidden due to NDA",
     "highlights": [
-      "Верстка HTML шаблонов для PDF генерации",
-      "Настройка API endpoints для различных типов счетов",
-      "Multi-brand поддержка с различными шаблонами",
-      "Интернационализация (EN/NL) с i18next",
-      "Интеграция с существующим микросервисом"
+      "HTML template layout for PDF generation",
+      "API endpoint configuration for various invoice types",
+      "Multi-brand support with different templates",
+      "Internationalization (EN/NL) with i18next",
+      "Integration with existing microservice"
     ],
     "image": "/images/projects/driver-passenger-pdf.webp"
   },
@@ -129,14 +129,14 @@
     "category": "previous",
     "tech": ["PHP", "Yii2", "MySQL", "Redis", "jQuery", "Bootstrap"],
     "confidential": false,
-    "description": "Поддерживал и развивал существующую систему бронирования авиабилетов с интеграцией 30+ авиакомпаний. Работал с модульной архитектурой на Yii2 Framework, интегрировал двух новых партнеров в систему, поддерживал API для партнеров и систему промокодов. Система включала мультивалютность, партнерскую программу и асинхронную обработку заказов.",
-    "role": "Full-stack разработчик",
+    "description": "Maintained and developed an existing flight booking system with integration of 30+ airlines. Worked with modular architecture on Yii2 Framework, integrated two new partners into the system, maintained API for partners and promo code system. The system included multi-currency, affiliate program and asynchronous order processing.",
+    "role": "Full-stack developer",
     "highlights": [
-      "Поддержка и развитие существующей системы",
-      "Интеграция двух новых партнеров в систему",
-      "Работа с модульной архитектурой Yii2 Framework",
-      "Поддержка API для партнеров и системы промокодов",
-      "Асинхронная обработка через Redis очереди"
+      "Maintenance and development of existing system",
+      "Integration of two new partners into the system",
+      "Work with modular Yii2 Framework architecture",
+      "API support for partners and promo code system",
+      "Asynchronous processing through Redis queues"
     ],
     "image": "/images/projects/chartertickets.webp"
   }

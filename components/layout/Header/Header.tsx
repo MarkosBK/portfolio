@@ -47,10 +47,9 @@ export function Header() {
   ]
 
   const languages = [
-    { code: 'ua', name: tLanguage('ukrainian'), flag: '🇺🇦' },
-    { code: 'ru', name: tLanguage('russian'), flag: '🇷🇺' },
     { code: 'en', name: tLanguage('english'), flag: '🇺🇸' },
     { code: 'de', name: tLanguage('german'), flag: '🇩🇪' },
+    { code: 'es', name: tLanguage('spanish'), flag: '🇪🇸' },
   ]
 
   const currentLanguage = languages.find(lang => lang.code === currentLocale)
@@ -64,7 +63,7 @@ export function Header() {
   }
 
   const changeLanguage = (locale: string) => {
-    // Сбрасываем scroll position и переключаем язык
+    // Reset scroll position and switch language
     window.scrollTo(0, 0)
     setTimeout(() => {
       router.replace(pathname, { locale })

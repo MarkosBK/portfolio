@@ -13,7 +13,7 @@ export const Button = ({
   children,
   ...props
 }: ButtonProps) => {
-  // Основная кнопка с анимированным бордером
+  // Main button with animated border
   if (variant === 'animated') {
     return (
       <HeroButton
@@ -37,7 +37,7 @@ export const Button = ({
     )
   }
 
-  // Вторичная кнопка с бордером
+  // Secondary button with border
   if (variant === 'outline') {
     return (
       <HeroButton
@@ -60,7 +60,7 @@ export const Button = ({
     )
   }
 
-  // Обычная кнопка с опциональной бордер-анимацией
+  // Regular button with optional border animation
   const heroVariant = variant as
     | 'solid'
     | 'bordered'

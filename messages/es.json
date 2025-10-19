@@ -1,0 +1,340 @@
+{
+  "navigation": {
+    "about": "Acerca de",
+    "experience": "Experiencia",
+    "projects": "Proyectos",
+    "skills": "Habilidades",
+    "contact": "Contacto"
+  },
+  "hero": {
+    "greeting": "Hola, soy",
+    "name": "Markos Basilio",
+    "title": "Desarrollador Full-Stack",
+    "subtitle": "Soluciones Web Modernas",
+    "description": "Creo aplicaciones web que ayudan a las empresas a crecer. Desde la idea hasta el lanzamiento — tu proyecto está en manos confiables.",
+    "scrollDown": "Desplázate a la sección sobre mí",
+    "cta": {
+      "projects": "Ver Trabajos",
+      "contact": "Ponte en Contacto",
+      "resume": "Descargar CV"
+    },
+    "stats": {
+      "yearsExperience": "Años de Experiencia",
+      "projectsCompleted": "Usuarios del Sistema"
+    }
+  },
+  "about": {
+    "title": "Acerca de Mí",
+    "subtitle": "Un desarrollador que entiende los negocios",
+    "description": "Durante más de 5 años, he estado creando aplicaciones web que resuelven problemas reales de negocio. Trabajo en proyectos desde startups hasta corporaciones.",
+    "journey": {
+      "title": "Historia de Desarrollo",
+      "items": [
+        {
+          "year": "2019",
+          "title": "Primera Experiencia Comercial",
+          "description": "Comencé con PHP y el Framework Yii2 en el proyecto CharterTickets"
+        },
+        {
+          "year": "2020-2021",
+          "title": "Transición a React",
+          "description": "Dominé React y TypeScript, creé las primeras aplicaciones móviles"
+        },
+        {
+          "year": "2022-2023",
+          "title": "Experiencia Full-Stack",
+          "description": "Trabajé con Vue.js, Quasar, React Native en proyectos multi-marca"
+        },
+        {
+          "year": "2024+",
+          "title": "Stack Moderno",
+          "description": "Enfoque en frameworks modernos y soluciones arquitectónicas"
+        }
+      ]
+    },
+    "philosophy": {
+      "title": "Mi Enfoque",
+      "principles": [
+        "Creo soluciones que funcionan para tu negocio",
+        "Me enfoco en la experiencia del usuario y los resultados",
+        "Aseguro confiabilidad y seguridad",
+        "Uso tecnologías modernas para mejores resultados"
+      ]
+    },
+    "cta": {
+      "viewWork": "Ver Trabajos",
+      "downloadCV": "Descargar CV"
+    },
+    "stats": {
+      "yearsOld": "Años",
+      "yearsExperience": "Años de Experiencia",
+      "workStyle": "Estilo de Trabajo",
+      "workStyleValue": "Remoto",
+      "projects": "Usuarios del Sistema"
+    }
+  },
+  "projects": {
+    "title": "Mis Trabajos",
+    "subtitle": "Proyectos que entregan resultados",
+    "categories": {
+      "all": "Todos",
+      "current": "Actuales",
+      "previous": "Anteriores",
+      "personal": "Personales"
+    },
+    "labels": {
+      "confidential": "Proyecto Confidencial",
+      "current": "Proyecto Actual",
+      "personal": "Proyecto Personal",
+      "first": "Primer Proyecto",
+      "inProgress": "En Desarrollo",
+      "private": "Privado"
+    },
+    "card": {
+      "viewDetails": "Detalles",
+      "hide": "Ocultar",
+      "technologies": "Tecnologías:",
+      "duration": "Duración:",
+      "moreTechnologies": "más"
+    },
+    "cta": {
+      "viewCode": "Código",
+      "viewDemo": "Demo",
+      "viewAllProjects": "Todos los Proyectos",
+      "viewOnGithub": "Ver en GitHub",
+      "liveDemo": "Demo en Vivo",
+      "viewSourceCode": "Ver Código Fuente",
+      "viewMoreProjects": "Más Proyectos",
+      "getInTouch": "Ponte en Contacto"
+    },
+    "messages": {
+      "linksWillBeAddedWhenDeployed": "Los enlaces se agregarán después del despliegue del proyecto.",
+      "sourceCodeAndLiveDemoNotPubliclyAvailable": "Este es un proyecto confidencial. El código fuente y la demo en vivo no están disponibles públicamente."
+    }
+  },
+  "skills": {
+    "title": "Habilidades",
+    "subtitle": "Tecnologías para tus proyectos",
+    "mainTitle": "Habilidades Técnicas",
+    "mainSubtitle": "Tecnologías que domino",
+    "description": "Herramientas y tecnologías para crear aplicaciones web de calidad.",
+    "showAllTechnologies": "Mostrar todas las tecnologías",
+    "fullStackTechnologies": "Tecnologías",
+    "allTechnologiesIWorkWith": "Tecnologías con las que trabajo",
+    "levelsBasedOnCommercialExperience": "* Niveles basados en experiencia comercial",
+    "mainTechnologiesShown": "* Se muestran las tecnologías principales",
+    "levels": {
+      "expert": "Avanzado",
+      "advanced": "Buen dominio",
+      "intermediate": "Básico"
+    }
+  },
+  "contact": {
+    "title": "Trabajemos juntos",
+    "subtitle": "Listo para ayudar con tu proyecto",
+    "description": "¿Tienes una idea de proyecto? Discutamos cómo puedo ayudar. Creo aplicaciones web y soluciones móviles que entregan resultados. Siempre abierto a nuevas tecnologías y desafíos interesantes. Contáctame para discutir tu proyecto.",
+    "cta": "Escríbeme",
+    "buttons": {
+      "sendEmail": "Enviar Email",
+      "viewGithub": "Ver GitHub"
+    },
+    "availability": {
+      "title": "Disponible para:",
+      "fullTime": "Empleo de tiempo completo",
+      "freelance": "Proyectos freelance",
+      "consultations": "Consultorías",
+      "support": "Soporte de proyectos",
+      "responseTime": "Tiempo de respuesta: Generalmente dentro de 24 horas"
+    },
+    "info": {
+      "email": "Email",
+      "location": "Ubicación",
+      "availability": "Disponibilidad",
+      "timezone": "Zona Horaria"
+    },
+    "form": {
+      "name": "Nombre",
+      "email": "Email",
+      "subject": "Asunto",
+      "message": "Mensaje",
+      "send": "Enviar"
+    },
+    "social": {
+      "github": "GitHub",
+      "linkedin": "LinkedIn",
+      "telegram": "Telegram",
+      "email": "Email"
+    }
+  },
+  "footer": {
+    "rights": "Todos los derechos reservados",
+    "description": "Desarrollador creando soluciones de negocio."
+  },
+  "theme": {
+    "toggle": "Cambiar tema",
+    "light": "Claro",
+    "dark": "Oscuro",
+    "system": "Sistema",
+    "switchToDark": "Cambiar a tema oscuro",
+    "switchToLight": "Cambiar a tema claro"
+  },
+  "language": {
+    "toggle": "Cambiar idioma",
+    "spanish": "Español",
+    "english": "English",
+    "german": "Deutsch"
+  },
+  "workProcess": {
+    "title": "Cómo trabajo",
+    "titleAccent": "en proyectos",
+    "subtitle": "Un proceso que lleva a resultados",
+    "description": "Un enfoque probado de desarrollo que garantiza calidad y entrega oportuna del proyecto.",
+    "steps": [
+      {
+        "title": "Análisis",
+        "description": "Estudio tus objetivos y requisitos para crear una solución óptima"
+      },
+      {
+        "title": "Diseño",
+        "description": "Creo arquitectura e interfaces que serán convenientes para tus usuarios"
+      },
+      {
+        "title": "Desarrollo",
+        "description": "Implemento funcionalidad usando tecnologías modernas y mejores prácticas"
+      },
+      {
+        "title": "Lanzamiento",
+        "description": "Despliego el proyecto y configuro todo lo necesario para operación estable"
+      }
+    ],
+    "advantagesTitle": "Por qué elegirme",
+    "advantages": [
+      {
+        "title": "Transparencia",
+        "description": "Plazos claros y reportes constantes de progreso",
+        "color": "emerald"
+      },
+      {
+        "title": "Calidad",
+        "description": "Atención al detalle en cada etapa del desarrollo",
+        "color": "blue"
+      },
+      {
+        "title": "Escalabilidad",
+        "description": "Arquitectura lista para el crecimiento de tu negocio",
+        "color": "purple"
+      },
+      {
+        "title": "Resultados",
+        "description": "Enfoque en lograr tus objetivos de negocio",
+        "color": "orange"
+      }
+    ]
+  },
+  "pages": {
+    "projects": {
+      "title": "Todos los Proyectos",
+      "subtitle": "Resumen Completo del Portafolio",
+      "description": "Explora mi portafolio completo de proyectos, cubriendo desde trabajo comercial actual hasta experimentos personales y primera experiencia.",
+      "back": "Atrás"
+    },
+    "projectDetail": {
+      "back": "Atrás"
+    }
+  },
+  "projectData": {
+    "ovogene-catalog": {
+      "description": "Desarrollé una plataforma web de catálogo de materiales donantes para clínicas médicas. Creé un sistema con soporte multi-marca, cada una con su propio diseño y configuraciones. Implementé un sistema complejo de búsqueda, filtrado y gestión de pedidos con un ciclo completo desde la creación hasta la entrega.",
+      "role": "Desarrollador Full-stack",
+      "highlights": [
+        "Soporte multi-marca en un sistema",
+        "Sistema de roles y permisos con autorización detallada",
+        "Sistema complejo de filtros y búsqueda",
+        "Panel de administración completo",
+        "Integración con AWS (S3, SES)"
+      ]
+    },
+    "mijnzetel": {
+      "description": "Desarrollé una aplicación multiplataforma para noticias políticas y encuestas. Creé un sistema con soporte para iOS, Android y Web en una sola base de código. Implementé autenticación, sistema de votación, feed de noticias y gestión de contenido a través de Firebase.",
+      "role": "Desarrollador independiente",
+      "highlights": [
+        "Desarrollo multiplataforma (iOS, Android, Web)",
+        "Sistema de autenticación y gestión de usuarios",
+        "Actualizaciones de datos en tiempo real a través de Firebase",
+        "Sistema de votación y encuestas",
+        "Diseño responsivo con Tailwind CSS"
+      ]
+    },
+    "mobile-laundry": {
+      "description": "Desarrollé desde cero una aplicación móvil multiplataforma para un servicio de tintorería. Creé un sistema de pedidos con integración de servicios logísticos, autenticación de dos factores y notificaciones push. Implementé segmentación B2B y B2C con diferentes flujos de registro.",
+      "role": "Desarrollador Frontend",
+      "note": "Nombre del proyecto oculto debido a NDA",
+      "highlights": [
+        "Desarrollo multiplataforma (iOS, Android)",
+        "Sistema de pedidos con integración logística",
+        "Autenticación de dos factores y notificaciones push",
+        "Segmentación B2B/B2C con diferentes flujos",
+        "Firebase Analytics y análisis detallados"
+      ]
+    },
+    "admin-laundry": {
+      "description": "Mantuve y desarrollé un panel administrativo para gestionar un servicio de tintorería. Trabajé con arquitectura Vue.js existente, agregué nuevas características para gestión de pedidos, integración con servicios logísticos y sistema de notificaciones.",
+      "role": "Desarrollador Frontend",
+      "note": "Nombre del proyecto oculto debido a NDA",
+      "highlights": [
+        "Mantenimiento y desarrollo de aplicación Vue.js",
+        "Integración con APIs logísticas",
+        "Sistema de gestión de pedidos y entregas",
+        "Notificaciones push y Service Workers",
+        "Autenticación de dos factores (2FA)"
+      ]
+    },
+    "driver-passenger-app": {
+      "description": "Conduje la migración de una aplicación web de Vuetify a Quasar Framework y dividí una sola base de código en varias aplicaciones multiplataforma separadas (Web, iOS, Android). Cada aplicación ahora contiene una marca. Implementé un sistema de reserva de viajes, gestión de perfiles de usuario y soporte multilingüe.",
+      "role": "Desarrollador Frontend",
+      "note": "Nombres de marcas ocultos debido a NDA",
+      "highlights": [
+        "Migración de Vuetify a Quasar Framework",
+        "División de base de código única en varias aplicaciones",
+        "Desarrollo multiplataforma (Web, iOS, Android)",
+        "Aplicación separada para cada marca",
+        "Sistema de roles (pasajero, conductor, administrador)"
+      ]
+    },
+    "driver-passenger-admin": {
+      "description": "Mantengo y desarrollo un panel administrativo integral para gestionar un ecosistema de transporte. Trabajo con arquitectura Vue.js existente, agrego nuevas características para gestionar viajes, conductores, pasajeros y un sistema complejo de precios. El panel de administración soporta arquitectura multi-marca para gestionar todas las marcas.",
+      "role": "Desarrollador Frontend",
+      "note": "Nombres de marcas ocultos debido a NDA",
+      "highlights": [
+        "Mantenimiento y desarrollo de aplicación Vue.js",
+        "Sistema complejo de gestión de viajes y estados",
+        "Arquitectura multi-marca para gestionar todas las marcas",
+        "Sistema de roles y permisos (admin, soporte, finanzas)",
+        "Integración con Google Maps y gráficos analíticos"
+      ]
+    },
+    "driver-passenger-pdf-generator": {
+      "description": "Diseñé todas las plantillas HTML para generar facturas PDF con soporte multi-marca. Configuré endpoints de API para generar varios tipos de facturas. Trabajé con un microservicio Node.js existente, creé una arquitectura multi-marca con diferentes plantillas para cada marca e implementé internacionalización.",
+      "role": "Desarrollador Frontend",
+      "note": "Nombres de marcas ocultos debido a NDA",
+      "highlights": [
+        "Diseño de plantillas HTML para generación de PDF",
+        "Configuración de endpoints de API para varios tipos de facturas",
+        "Soporte multi-marca con diferentes plantillas",
+        "Internacionalización (EN/NL) con i18next",
+        "Integración con microservicio existente"
+      ]
+    },
+    "chartertickets": {
+      "description": "Mantuve y desarrollé un sistema existente de reserva de vuelos con integración de más de 30 aerolíneas. Trabajé con arquitectura modular en Yii2 Framework, integré dos nuevos socios al sistema, mantuve API para socios y sistema de códigos promocionales. El sistema incluía multi-moneda, programa de afiliados y procesamiento asíncrono de pedidos.",
+      "role": "Desarrollador Full-stack",
+      "highlights": [
+        "Mantenimiento y desarrollo de sistema existente",
+        "Integración de dos nuevos socios al sistema",
+        "Trabajo con arquitectura modular Yii2 Framework",
+        "Soporte de API para socios y sistema de códigos promocionales",
+        "Procesamiento asíncrono a través de colas Redis"
+      ]
+    }
+  }
+}

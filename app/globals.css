@@ -1,7 +1,7 @@
 @import 'tailwindcss';
 @custom-variant dark (&:where(.dark, .dark *));
 
-/* Подключение Google Fonts */
+/* Google Fonts import */
 @import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=JetBrains+Mono:ital,wght@0,100..800;1,100..800&display=swap');
 
 @theme {
@@ -64,7 +64,7 @@ body {
   font-family: var(--font-inter);
 }
 
-/* Кастомные утилиты для анимаций */
+/* Custom animation utilities */
 .animate-delay-200 {
   animation-delay: 200ms;
 }
@@ -77,7 +77,7 @@ body {
   animation-delay: 600ms;
 }
 
-/* Градиентный текст */
+/* Gradient text */
 .gradient-text {
   background: linear-gradient(135deg, var(--color-primary), var(--color-accent));
   background-size: 200% 200%;
@@ -87,7 +87,7 @@ body {
   animation: gradient-x 3s ease infinite;
 }
 
-/* Стеклянный эффект */
+/* Glass effect */
 .glass-effect {
   backdrop-filter: blur(16px) saturate(180%);
   -webkit-backdrop-filter: blur(16px) saturate(180%);
@@ -98,29 +98,29 @@ body {
   background-color: rgba(0, 0, 0, 0.3);
 }
 
-/* Сплошной эффект для мобилки */
+/* Solid effect for mobile */
 .mobile-solid-header {
   background-color: var(--color-background);
   border-bottom: 1px solid var(--color-border);
-  min-height: 70px; /* Увеличенная высота для мобилки */
+  min-height: 70px; /* Increased height for mobile */
   display: flex;
   align-items: center;
 }
 
-/* Десктопный хидер с прозрачностью */
+/* Desktop header with transparency */
 @media (min-width: 1024px) {
   .mobile-solid-header {
     background-color: transparent !important;
     border-bottom: none !important;
-    min-height: auto !important; /* Убираем принудительную высоту на десктопе */
+    min-height: auto !important; /* Remove forced height on desktop */
   }
 }
 
-/* Фикс для мобильного меню */
+/* Fix for mobile menu */
 .mobile-menu-solid {
   background-color: var(--color-background) !important;
   position: fixed !important;
-  top: 70px !important; /* Высота хидера */
+  top: 70px !important; /* Header height */
   left: 0 !important;
   right: 0 !important;
   bottom: 0 !important;
@@ -145,19 +145,19 @@ body {
   }
 }
 
-/* Отступ для контента под мобильный хидер */
+/* Content offset under mobile header */
 @media (max-width: 1023px) {
   main {
     margin-top: 70px;
   }
 
-  /* Fallback для случаев когда main не используется */
+  /* Fallback for cases when main is not used */
   body > div:first-child > div:first-child {
     margin-top: 70px;
   }
 }
 
-/* Hover эффекты с современными тенями */
+/* Hover effects with modern shadows */
 .hover-lift {
   transition:
     transform 0.2s ease-in-out,
@@ -171,7 +171,7 @@ body {
     0 10px 10px -5px rgba(19, 34, 56, 0.04);
 }
 
-/* Современные тени для карточек */
+/* Modern shadows for cards */
 .shadow-modern {
   box-shadow:
     0 4px 6px -1px rgba(19, 34, 56, 0.1),
@@ -194,7 +194,7 @@ body {
   box-shadow: 0 25px 50px -12px rgba(19, 34, 56, 0.25);
 }
 
-/* Технологичные тени с синим оттенком */
+/* Tech shadows with blue tint */
 .shadow-tech {
   box-shadow:
     0 4px 6px -1px rgba(19, 34, 56, 0.1),
@@ -216,7 +216,7 @@ body {
     0 0 0 1px rgba(165, 61, 255, 0.15);
 }
 
-/* Темные тени для dark mode */
+/* Dark shadows for dark mode */
 .dark .shadow-modern {
   box-shadow:
     0 4px 6px -1px rgba(0, 0, 0, 0.3),
@@ -260,7 +260,7 @@ body {
     0 0 0 1px rgba(184, 84, 255, 0.2);
 }
 
-/* Scrollbar стилизация */
+/* Scrollbar styling */
 ::-webkit-scrollbar {
   width: 8px;
 }
@@ -278,13 +278,13 @@ body {
   background: color-mix(in srgb, var(--color-primary) 80%, transparent);
 }
 
-/* Selection цвета */
+/* Selection colors */
 ::selection {
   background-color: color-mix(in srgb, var(--color-primary) 30%, transparent);
   color: var(--color-primary-foreground);
 }
 
-/* Анимация бегущего бордера */
+/* Running border animation */
 .border-animated {
   position: relative;
 }
@@ -298,7 +298,7 @@ body {
   z-index: 1;
 }
 
-/* Верхняя линия - слева направо */
+/* Top line - left to right */
 .border-animated::before {
   top: 0;
   left: 0;
@@ -311,7 +311,7 @@ body {
   transition-delay: 0ms;
 }
 
-/* Правая линия - сверху вниз */
+/* Right line - top to bottom */
 .border-animated::after {
   top: 0;
   right: 0;
@@ -324,13 +324,13 @@ body {
   transition-delay: 300ms;
 }
 
-/* Нижняя линия - справа налево (начинается одновременно с правой) */
+/* Bottom line - right to left (starts simultaneously with right) */
 .border-animated:hover .border-bottom {
   width: 100%;
   transition-delay: 0ms;
 }
 
-/* Левая линия - снизу вверх (начинается одновременно с верхней) */
+/* Left line - bottom to top (starts simultaneously with top) */
 .border-animated:hover .border-left {
   height: 100%;
   transition-delay: 300ms;

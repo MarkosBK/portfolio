@@ -5,11 +5,11 @@ const withNextIntl = createNextIntlPlugin('./i18n/request.ts')
 /** @type {import('next').NextConfig} */
 const nextConfig = {
   experimental: {
-    // Включаем оптимизированные пакеты для сборки
+    // Enable optimized packages for build
     optimizePackageImports: ['@heroui/react', 'lucide-react', 'framer-motion'],
   },
 
-  // Turbopack конфигурация (заменяет experimental.turbo)
+  // Turbopack configuration (replaces experimental.turbo)
   turbopack: {
     rules: {
       '*.svg': {
@@ -19,27 +19,27 @@ const nextConfig = {
     },
   },
 
-  // Настройки изображений
+  // Image settings
   images: {
     formats: ['image/webp', 'image/avif'],
     dangerouslyAllowSVG: true,
     contentSecurityPolicy: "default-src 'self'; script-src 'none'; sandbox;",
   },
 
-  // Компрессия
+  // Compression
   compress: true,
 
-  // PWA настройки (если понадобятся в будущем)
+  // PWA settings (if needed in the future)
   // pwa: {
   //   dest: 'public',
   //   register: true,
   //   skipWaiting: true,
   // },
 
-  // Webpack конфигурация для оптимизации
+  // Webpack configuration for optimization
   webpack: (config, { dev, isServer }) => {
     if (!dev && !isServer) {
-      // Настройки для production сборки
+      // Settings for production build
       config.resolve.alias = {
         ...config.resolve.alias,
         '@heroui/react': '@heroui/react',

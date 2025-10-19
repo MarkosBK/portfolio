@@ -7,7 +7,7 @@ export function useScrollReset() {
   const locale = useLocale()
 
   useEffect(() => {
-    // Сбрасываем scroll position при смене языка
+    // Reset scroll position when language changes
     window.scrollTo(0, 0)
   }, [locale])
 }

@@ -1,43 +1,49 @@
 {
   "skillSections": [
     {
-      "title": "Основной стек",
+      "title": "Frontend",
       "techs": [
         { "name": "React/Next.js", "level": "expert" },
+        { "name": "React Native/Expo", "level": "expert" },
         { "name": "TypeScript", "level": "expert" },
-        { "name": "PostgreSQL/MySQL", "level": "expert" },
-        { "name": "React Native", "level": "expert" },
-        { "name": "Expo", "level": "expert" }
-      ]
-    },
-    {
-      "title": "Дополнительный стек",
-      "techs": [
-        { "name": "Vue.js", "level": "advanced" },
-        { "name": "Vuetify", "level": "advanced" },
-        { "name": "Node.js/Express", "level": "advanced" },
-        { "name": "Prisma ORM", "level": "expert" },
-        { "name": "Firebase", "level": "advanced" },
-        { "name": "Supabase", "level": "advanced" },
-        { "name": "Quasar", "level": "advanced" },
+        { "name": "Tailwind CSS", "level": "expert" },
+        { "name": "Vue.js/Quasar", "level": "advanced" },
+        { "name": "JavaScript (ES6+)", "level": "expert" },
+        { "name": "HTML5/CSS3", "level": "expert" },
         { "name": "Capacitor", "level": "advanced" }
       ]
     },
     {
-      "title": "Инструменты и DevOps",
+      "title": "Backend",
       "techs": [
-        { "name": "Tailwind CSS", "level": "expert" },
-        { "name": "Git/GitHub", "level": "expert" },
+        { "name": "Node.js", "level": "expert" },
+        { "name": "NestJS", "level": "expert" },
+        { "name": "Prisma ORM", "level": "expert" },
+        { "name": "PostgreSQL/MySQL", "level": "expert" },
+        { "name": "Redis", "level": "advanced" },
+        { "name": "Swagger", "level": "expert" }
+      ]
+    },
+    {
+      "title": "DevOps & Tools",
+      "techs": [
         { "name": "Docker", "level": "advanced" },
-        { "name": "AWS", "level": "intermediate" },
-        { "name": "CI/CD", "level": "advanced" }
+        { "name": "AWS (S3, SES)", "level": "advanced" },
+        { "name": "CI/CD", "level": "advanced" },
+        { "name": "Firebase", "level": "advanced" },
+        { "name": "Analytics", "level": "advanced" },
+        { "name": "i18n", "level": "expert" }
       ]
     }
   ],
   "coreSkills": [
     { "name": "React/Next.js", "level": "expert" },
+    { "name": "React Native/Expo", "level": "expert" },
     { "name": "TypeScript", "level": "expert" },
+    { "name": "Node.js", "level": "expert" },
     { "name": "PostgreSQL/MySQL", "level": "expert" },
-    { "name": "React Native", "level": "expert" }
+    { "name": "Prisma ORM", "level": "expert" },
+    { "name": "Tailwind CSS", "level": "expert" },
+    { "name": "Firebase", "level": "expert" }
   ]
 }
